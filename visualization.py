@@ -105,7 +105,6 @@ def create_excel_download(schedule_df, tasks_df, project_start_date):
     )
 
     # Prepare output dataframe
-    # ИСПРАВЛЕНА СИНТАКСИЧЕСКАЯ ОШИБКА: убраны лишние скобки вокруг списка столбцов
     output_df = full_df[
         ['task_code', 'task_name', 'resource', 'Start Date', 'End Date']
         ].sort_values('Start Date')
