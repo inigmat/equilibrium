@@ -39,8 +39,8 @@ openpyxl==3.1.2
 
 1.  **Clone Repository:**
     ```bash
-    git clone https://github.com/YourUsername/p6-scheduler-optimizer.git
-    cd p6-scheduler-optimizer
+    git clone https://github.com/inigmat/equilibrium.git
+    cd equilibrium
     ```
 2.  **Install Dependencies:**
     ```bash
