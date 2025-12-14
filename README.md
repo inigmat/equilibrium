@@ -1,4 +1,6 @@
-## Equilibrium - Scheduler Optimizer
+## Equilibrium - P6 Scheduler Optimizer
+
+**GitHub Repository:** `https://github.com/inigmat/equilibrium.git`
 
 This project provides a constrained optimization framework for scheduling Primavera P6 projects (XER format) using Google's Constraint Programming Solver (CP-SAT). The primary objective is to minimize project makespan while adhering to complex precedence logic and resource capacity constraints.
 
@@ -17,12 +19,13 @@ The application implements two distinct optimization models:
 
 The system is built using the following environment:
 
-  * **Python 3.8+**
-  * **Solver:** `ortools` (CP-SAT Engine)
-  * **Frontend:** `streamlit`
-  * **Parsing:** `xerparser`
-  * **Data Core:** `pandas`
-  * **Graphics:** `matplotlib`
+| Component | Role | Libraries Used |
+| :--- | :--- | :--- |
+| **Solver** | Constraint Programming Engine | `ortools` (CP-SAT Engine) |
+| **Interface**| Web Application & I/O | `streamlit` |
+| **Data Parsing**| XER File Ingestion | `xerparser` |
+| **Data Core**| Data Transformation & Manipulation | `pandas` |
+| **Graphics**| Gantt Chart Generation | `matplotlib` |
 
 **Required Package Versions:**
 
@@ -51,23 +54,30 @@ openpyxl==3.1.2
     streamlit run app.py
     ```
 
-### IV. Technical Analysis of Constraint Issues
+### IV. Status and Limitations (Demo Mode)
+
+** CURRENT VERSION IS A DEMO/TEST BUILD.**
+
+This version is intended for demonstration purposes and contains known simplifications. Key limitations include:
+
+  * **Calendar Simplification:** The model **does not** incorporate complex P6 calendars. All scheduling calculations (task start/end dates) are performed based on a **continuous 7-day working calendar**. Weekends, holidays, and non-work periods defined in the source XER calendars are currently ignored.
+  * **Potential Errors:** Since this is a test environment, various edge case errors or unexpected behavior may occur.
+
+### V. Technical Analysis of Constraint Issues
 
 #### 1\. Infeasibility at N=2 (Scenario 2)
 
 In certain project structures, the model may return an `INFEASIBLE` status specifically when $N=2$, while succeeding at $N=1$ or $N \ge 3$. This is typically a result of **Precedence-Capacity Conflict**:
 
-  * At $N=1$, tasks are purely sequential.
-  * At $N=2$, the solver attempts to parallelize two critical paths. If these paths share rigid dependencies (e.g., a Start-to-Finish link with zero lag) that cannot be satisfied within the mathematical bounds of exactly two parallel tracks, the state space becomes empty.
-  * At $N \ge 3$, the additional degree of freedom allows the solver to bypass these rigid intersections.
+  * The tight coupling of critical precedence dependencies (e.g., FS links) with the rigid capacity constraint of exactly two parallel Sub-Crews may eliminate the feasible solution space required to minimize Makespan.
 
 #### 2\. Resource Naming Logic
 
 To maintain data integrity between the solver and the visualization layer:
 
   * **Operational Tasks:** Are explicitly appended with a `- Sub N` suffix (even if $N=1$) to ensure clear resource allocation in Gantt charts.
-  * **Milestones:** Retain their original base resource name but are excluded from Gantt resource-loading tracks to prevent visual artifacts, as they consume zero time and zero resource capacity.
+  * **Milestones:** Retain their original base resource name but are explicitly excluded from Gantt resource-loading tracks, as they consume zero time and zero resource capacity.
 
-### V. Data Output
+### VI. Data Output
 
 The system generates a time-scaled resource-loaded schedule. Results are available for export via `.xlsx` format, where dates are calculated relative to the `plan_start_date` identified in the XER project header.
