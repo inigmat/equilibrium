@@ -28,12 +28,12 @@ The system is built using the following environment:
 **Required Package Versions:**
 
 ```text
-streamlit==1.28.0
-pandas==2.0.3
-matplotlib==3.7.2
-ortools==9.7.0
-xerparser==1.5.1
-openpyxl==3.1.2
+streamlit==1.52.1
+pandas==2.3.3
+matplotlib==3.10.7
+ortools==9.14.6206
+xerparser==0.13.8
+openpyxl==3.1.5
 ```
 
 ### III. Installation and Deployment
