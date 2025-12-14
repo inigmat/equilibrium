@@ -1,7 +1,5 @@
 ## Equilibrium - P6 Scheduler Optimizer
 
-**GitHub Repository:** `https://github.com/inigmat/equilibrium.git`
-
 This project provides a constrained optimization framework for scheduling Primavera P6 projects (XER format) using Google's Constraint Programming Solver (CP-SAT). The primary objective is to minimize project makespan while adhering to complex precedence logic and resource capacity constraints.
 
 ### I. Core Functionality
