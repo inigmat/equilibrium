@@ -8,7 +8,6 @@ from solver import DEFAULTUDFLABEL
 MIMECONST = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 
 
-# Set page config at the very beginning (recommended for stability)
 st.set_page_config(page_title="P6 Scheduler Optimizer", layout="wide")
 
 
@@ -49,7 +48,6 @@ def main():
             tasks_df, rels_df, mile_mask = prepare_dataframes(project)
             project_start = project.plan_start_date.date()
             
-            # --- START NEW LOGIC FOR TYPE 2 CONFIG ---
             unique_resources = []
             if mode == "Type 2: Existing Resource Check":
                 # Find the UDF type definition
@@ -79,7 +77,6 @@ def main():
                         )
                 else:
                     subcrew_config = {}
-            # --- END NEW LOGIC FOR TYPE 2 CONFIG ---
 
 
             st.subheader("Project Data Overview")
