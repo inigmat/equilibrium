@@ -2,6 +2,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import io
 
+DATEFORMAT = '%Y-%m-%d'
+
 
 def plot_gantt_chart(schedule_df, tasks_info_df):
     """
@@ -77,31 +79,15 @@ def create_excel_download(schedule_df, tasks_df, project_start_date):
         how='left'
     )
 
-    # Identify milestones
-    full_df['is_milestone'] = (
-        full_df['task_type']
-        .astype(str)
-        .str.contains('Mile', na=False)
-    )
-
     # Convert days to dates
     full_df['Start Date'] = (
         pd.to_datetime(project_start_date)
         + pd.to_timedelta(full_df['start_day'], unit='D')
     )
-
-    # For milestones: end date = start date,
-    # for regular tasks: end date = end_day - 1
-    full_df['End Date'] = pd.to_datetime(project_start_date) + pd.to_timedelta(
-        full_df.apply(
-            lambda row: (
-                row['end_day']
-                if row['is_milestone']
-                else row['end_day'] - 1
-                ),
-            axis=1
-        ),
-        unit='D'
+    # Convert days to dates
+    full_df['End Date'] = (
+        pd.to_datetime(project_start_date)
+        + pd.to_timedelta(full_df['end_day'], unit='D')
     )
 
     # Prepare output dataframe
@@ -110,8 +96,8 @@ def create_excel_download(schedule_df, tasks_df, project_start_date):
         ].sort_values('Start Date')
 
     # Format dates as strings
-    output_df['Start Date'] = output_df['Start Date'].dt.strftime('%Y-%m-%d')
-    output_df['End Date'] = output_df['End Date'].dt.strftime('%Y-%m-%d')
+    output_df['Start Date'] = output_df['Start Date'].dt.strftime(DATEFORMAT)
+    output_df['End Date'] = output_df['End Date'].dt.strftime(DATEFORMAT)
 
     # Create Excel file in memory
     buffer = io.BytesIO()
