@@ -93,7 +93,7 @@ def create_excel_download(schedule_df, tasks_df, project_start_date):
     # Prepare output dataframe
     output_df = full_df[
         ['task_code', 'task_name', 'resource', 'Start Date', 'End Date']
-        ].sort_values('Start Date')
+        ].sort_values('task_code')
 
     # Format dates as strings
     output_df['Start Date'] = output_df['Start Date'].dt.strftime(DATEFORMAT)
