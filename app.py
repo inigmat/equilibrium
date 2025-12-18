@@ -39,6 +39,7 @@ def main():
         )
 
     # Optimization mode selection
+    st.sidebar.subheader("Optimization Settings")  # Изменено название
     mode = st.sidebar.radio(
         "Select Operation Scenario:",
         ("Type 1: Auto-Assignment Optimization",
