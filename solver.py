@@ -154,7 +154,7 @@ def run_scenario_type_1(tasks_df, rels_df, mile_mask, nb_workers):
     model.Minimize(makespan)
 
     solver = cp_model.CpSolver()
-    solver.parameters.max_time_in_seconds = 20.0
+    solver.parameters.max_time_in_seconds = 60.0
     status = solver.Solve(model)
 
     if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
@@ -236,7 +236,7 @@ def run_scenario_type_2(tasks_df, rels_df, xer, project,
     model.Minimize(makespan)
 
     solver = cp_model.CpSolver()
-    solver.parameters.max_time_in_seconds = 20.0
+    solver.parameters.max_time_in_seconds = 60.0
     status = solver.Solve(model)
 
     if status in (cp_model.OPTIMAL, cp_model.FEASIBLE):
