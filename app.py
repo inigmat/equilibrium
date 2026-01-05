@@ -1,11 +1,11 @@
 import datetime
+
 import streamlit as st
 from ortools.sat.python import cp_model
 
 from data_loader import load_and_parse_xer, prepare_dataframes
-from solver import run_scenario_type_1, run_scenario_type_2
-from visualization import plot_gantt_chart, create_excel_download
-from solver import DEFAULTUDFLABEL
+from solver import DEFAULTUDFLABEL, run_scenario_type_1, run_scenario_type_2
+from visualization import create_excel_download, plot_gantt_chart
 
 # Constants
 MIMECONST = (
@@ -171,7 +171,9 @@ def main():
                         with tab2:
                             # Table view of the optimized schedule
                             display_df = res_df.merge(
-                                tasks_df[['task_id', 'task_code', 'task_name']],
+                                tasks_df[['task_id',
+                                          'task_code',
+                                          'task_name']],
                                 on='task_id'
                             )
 

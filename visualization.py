@@ -1,6 +1,7 @@
+import io
+
 import matplotlib.pyplot as plt
 import pandas as pd
-import io
 
 DATEFORMAT = '%Y-%m-%d'
 
@@ -12,18 +13,19 @@ def plot_gantt_chart(schedule_df, tasks_info_df):
     """
     # Merge results with task details
     df = schedule_df.merge(
-        tasks_info_df[['task_id', 'task_code', 'task_name', 'task_type']], # Включаем task_type для фильтрации
+        # Включаем task_type для фильтрации
+        tasks_info_df[['task_id', 'task_code', 'task_name', 'task_type']],
         on='task_id',
         how='left'
         )
 
     # Фильтруем:
     # 1. Вехи (Milestones) - они не являются ресурсами для Ганта.
-    df = df[~df['task_type'].str.contains('Mile', na=False)] 
-    
+    df = df[~df['task_type'].str.contains('Mile', na=False)]
+
     # 2. Неназначенные задачи
     df = df[~df['resource'].str.contains('Unassigned', na=False)]
-    
+
     df = df.dropna(subset=['resource'])
 
     if df.empty:

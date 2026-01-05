@@ -1,5 +1,6 @@
-import pandas as pd
 from collections import defaultdict
+
+import pandas as pd
 from ortools.sat.python import cp_model
 
 DEFAULTUDFLABEL = "ResAllocation"
@@ -56,7 +57,7 @@ def solve_model_common_setup(tasks_df, rels_df):
 
 def post_process_floating_tasks(results_df, rels_df):
     """
-    Recalculates dates for tasks without successors to 'pull' them 
+    Recalculates dates for tasks without successors to 'pull' them
     towards their predecessors, preventing them from floating at the end.
     """
     # Identify tasks that have at least one successor
@@ -103,9 +104,10 @@ def post_process_floating_tasks(results_df, rels_df):
                         )
 
                 if possible_starts:
-                    # New start is the earliest possible date given predecessors
+                    # New start is the earliest
+                    # possible date given predecessors
                     new_start = max(0, max(possible_starts))
-                    # Only update if the new date is earlier than the solver's 
+                    # Only update if the new date is earlier than the solver's
                     if new_start < data['start_day']:
                         data['start_day'] = new_start
                         data['end_day'] = new_start + data['duration']
@@ -247,7 +249,8 @@ def run_scenario_type_2(tasks_df, rels_df, xer, project,
             if t_id in task_res_map and task_vars[t_id]['duration'] > 0:
                 nb_subs = subcrew_config.get(base_res, 1)
                 for s in range(nb_subs):
-                    if solver.Value(sub_assignment.get((t_id, base_res, s), 0)):
+                    if solver.Value(sub_assignment.get((t_id,
+                                                        base_res, s), 0)):
                         res_name = f"{base_res} - Sub {s+1}"
                         break
             results.append({
