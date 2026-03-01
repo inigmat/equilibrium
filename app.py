@@ -74,13 +74,19 @@ def main():
         try:
             # 1. Read and Parse the XER file
             xer, project = load_and_parse_xer(uploaded_file)
-            tasks_df, rels_df, mile_mask = prepare_dataframes(project)
+            tasks_df, rels_df, mile_mask, data_date = prepare_dataframes(project)
 
             # Determine the project start date
             if use_file_date:
                 project_start = project.plan_start_date.date()
 
+            # Normalise data_date to a date object (may be datetime or None)
+            if data_date is not None and hasattr(data_date, 'date'):
+                data_date = data_date.date()
+
             st.sidebar.info(f"Project start date: **{project_start}**")
+            if data_date:
+                st.sidebar.info(f"Last Recalc Date: **{data_date}**")
 
             unique_resources = []
             if mode == "Type 2: Existing Resource Check":
@@ -102,23 +108,44 @@ def main():
                 if unique_resources:
                     st.sidebar.subheader("Sub-Crew Configuration")
                     st.sidebar.caption(
-                        "Specify number of sub-crews for each resource "
-                        "(1 means no division)."
+                        "Number of parallel sub-crews per brigade. "
+                        "Default = all tasks can run concurrently (critical path). "
+                        "Reduce to simulate limited workforce."
                     )
+
+                    # Count not-started tasks per resource to set slider bounds
+                    ns_mask = tasks_df['status'] == 'TaskStatus.TK_NotStart'
+                    ns_task_ids = set(tasks_df[ns_mask]['task_id'])
+                    resource_task_counts = {}
+                    for task in project.tasks:
+                        if res_udf in task.user_defined_fields:
+                            r = task.user_defined_fields[res_udf]
+                            if r and task.uid in ns_task_ids:
+                                resource_task_counts[r] = (
+                                    resource_task_counts.get(r, 0) + 1
+                                )
 
                     subcrew_config = {}
                     for resource in unique_resources:
-                        subcrew_config[resource] = st.sidebar.slider(
-                            f"Sub-Crews for **{resource}**:",
-                            1, 10, 1, key=f"subcrew_{resource}"
+                        max_subs = max(1, resource_task_counts.get(resource, 1))
+                        subcrew_config[resource] = st.sidebar.number_input(
+                            f"Sub-Crews for **{resource}** "
+                            f"({max_subs} not-started tasks):",
+                            min_value=1,
+                            max_value=max_subs,
+                            value=max_subs,
+                            step=1,
+                            key=f"subcrew_{resource}"
                         )
                 else:
                     subcrew_config = {}
 
             # Project overview section
             st.subheader("Project Data Overview")
+            data_date_str = data_date.strftime('%Y-%m-%d') if data_date else "N/A"
             st.write(
                 f"**Project Start:** {project_start.strftime('%Y-%m-%d')} | "
+                f"**Last Recalc Date:** {data_date_str} | "
                 f"**Total Tasks:** {len(tasks_df)}"
             )
 
@@ -131,12 +158,14 @@ def main():
                 with st.spinner("Optimizing schedule..."):
                     if mode == "Type 1: Auto-Assignment Optimization":
                         status, makespan, res_df = run_scenario_type_1(
-                            tasks_df, rels_df, mile_mask, nb_workers
+                            tasks_df, rels_df, mile_mask, nb_workers,
+                            project_start, data_date
                         )
                     else:
                         status, makespan, res_df = run_scenario_type_2(
                             tasks_df, rels_df, xer, project,
-                            udf_name, subcrew_config
+                            udf_name, subcrew_config,
+                            project_start, data_date
                         )
 
                     # 3. Results Display
