@@ -138,11 +138,10 @@ def load_and_prepare_mpp(uploaded_file):
             _mpxj.startJVM()
         from org.mpxj import TimeUnit  # type: ignore  # noqa: PLC0415, I001
         from org.mpxj.reader import UniversalProjectReader  # type: ignore
-    except ImportError as exc:
-        raise ImportError(
-            "mpxj is required for MS Project files. "
-            "Install it with: pip install mpxj"
-            "  (Java 11+ must also be present)"
+    except Exception as exc:
+        raise RuntimeError(
+            "MS Project file support requires mpxj and Java 11+. "
+            "Install mpxj via pip and ensure a JDK is present."
         ) from exc
 
     # Write uploaded bytes to a temp file — mpxj needs a file path
