@@ -89,21 +89,6 @@ This version is intended for demonstration purposes and contains known simplific
   * **MS Project Scenario 2:** Resource grouping is based on the first resource assignment per task. Tasks with no resource assignment are excluded from Scenario 2.
   * **Potential Errors:** Since this is a test environment, various edge case errors or unexpected behavior may occur.
 
-### VI. Technical Analysis of Constraint Issues
-
-#### 1\. Infeasibility at N=2 (Scenario 2)
-
-In certain project structures, the model may return an `INFEASIBLE` status specifically when $N=2$, while succeeding at $N=1$ or $N \ge 3$. This is typically a result of **Precedence-Capacity Conflict**:
-
-  * The tight coupling of critical precedence dependencies (e.g., FS links) with the rigid capacity constraint of exactly two parallel Sub-Crews may eliminate the feasible solution space required to minimize Makespan.
-
-#### 2\. Resource Naming Logic
-
-To maintain data integrity between the solver and the visualization layer:
-
-  * **Operational Tasks:** Are explicitly appended with a `- Sub N` suffix (even if $N=1$) to ensure clear resource allocation in Gantt charts.
-  * **Milestones:** Retain their original base resource name but are explicitly excluded from Gantt resource-loading tracks, as they consume zero time and zero resource capacity.
-
-### VII. Data Output
+### VI. Data Output
 
 The system generates a time-scaled resource-loaded schedule. Results are available for export via `.xlsx` format, where dates are calculated relative to the project start date identified in the file header.
