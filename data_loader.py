@@ -149,6 +149,20 @@ def load_and_prepare_mpp(uploaded_file):
         except Exception:
             pass
 
+    # Fallback: glob standard Linux JVM locations (e.g. Streamlit Cloud)
+    if 'JAVA_HOME' not in os.environ:
+        import glob as _glob  # noqa: PLC0415, I001
+        for _pat in (
+            '/usr/lib/jvm/*/bin/java',
+            '/usr/local/lib/jvm/*/bin/java',
+        ):
+            _matches = sorted(_glob.glob(_pat))
+            if _matches:
+                os.environ['JAVA_HOME'] = os.path.dirname(
+                    os.path.dirname(_matches[-1])
+                )
+                break
+
     try:
         import mpxj as _mpxj  # noqa: PLC0415, I001
         if not _mpxj.isJVMStarted():
@@ -157,8 +171,9 @@ def load_and_prepare_mpp(uploaded_file):
         from org.mpxj.reader import UniversalProjectReader  # type: ignore
     except Exception as exc:
         raise RuntimeError(
-            "MS Project file support requires mpxj and Java 11+. "
-            "Install mpxj via pip and ensure a JDK is present."
+            f"MS Project file support requires mpxj and Java 11+. "
+            f"Install mpxj via pip and ensure a JDK is present. "
+            f"(Detail: {type(exc).__name__}: {exc})"
         ) from exc
 
     # Write uploaded bytes to a temp file — mpxj needs a file path
