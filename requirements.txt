@@ -4,3 +4,4 @@ matplotlib==3.10.7
 ortools==9.14.6206
 xerparser==0.13.8
 openpyxl==3.1.5
+mpxj==15.3.1
