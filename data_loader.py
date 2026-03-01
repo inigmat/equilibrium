@@ -133,15 +133,16 @@ def load_and_prepare_mpp(uploaded_file):
     # mpxj import is deferred so XER workflow works without a JVM installed.
     # startJVM() must be called explicitly before using org.mpxj Java classes.
     try:
-        import mpxj as _mpxj  # noqa: PLC0415
+        import mpxj as _mpxj  # noqa: PLC0415, I001
         if not _mpxj.isJVMStarted():
             _mpxj.startJVM()
-        from org.mpxj.reader import UniversalProjectReader  # noqa: PLC0415
-        from org.mpxj import TimeUnit  # noqa: PLC0415
+        from org.mpxj import TimeUnit  # type: ignore  # noqa: PLC0415, I001
+        from org.mpxj.reader import UniversalProjectReader  # type: ignore
     except ImportError as exc:
         raise ImportError(
             "mpxj is required for MS Project files. "
-            "Install it with: pip install mpxj  (Java 11+ must also be present)"
+            "Install it with: pip install mpxj"
+            "  (Java 11+ must also be present)"
         ) from exc
 
     # Write uploaded bytes to a temp file — mpxj needs a file path
@@ -161,7 +162,7 @@ def load_and_prepare_mpp(uploaded_file):
 
     # Project start & status date
     project_start = _java_dt_to_date(props.getStartDate())
-    status_dt = props.getStatusDate() or props.getCurrentDate()
+    status_dt = props.getStatusDate()
     data_date = _java_dt_to_date(status_dt)
 
     # Default calendar hours/day (fallback = 8)
@@ -172,7 +173,7 @@ def load_and_prepare_mpp(uploaded_file):
     )
 
     # Relation type string → 2-char code
-    _REL_MAP = {
+    _rel_map = {
         'FINISH_START': 'FS',
         'START_START':  'SS',
         'FINISH_FINISH': 'FF',
@@ -268,7 +269,7 @@ def load_and_prepare_mpp(uploaded_file):
 
             rel_type_str = str(rel.getType())
             link_type = next(
-                (v for k, v in _REL_MAP.items() if k in rel_type_str), 'FS'
+                (v for k, v in _rel_map.items() if k in rel_type_str), 'FS'
             )
 
             lag_days = 0.0
@@ -276,7 +277,9 @@ def load_and_prepare_mpp(uploaded_file):
             if lag_obj is not None:
                 try:
                     lag_hours = float(str(
-                        lag_obj.convertUnits(TimeUnit.HOURS, props).getDuration()
+                        lag_obj.convertUnits(
+                            TimeUnit.HOURS, props
+                        ).getDuration()
                     ))
                     lag_days = lag_hours / default_hours
                 except Exception:

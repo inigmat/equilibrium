@@ -13,7 +13,8 @@ def solve_model_common_setup(tasks_df, rels_df,
     Sets up the basic CP-SAT model: time variables and logical dependencies.
 
     Completed tasks are pinned to their actual dates.
-    Active (in-progress) tasks are pinned: actual start, end = data_date + remaining.
+    Active (in-progress) tasks are pinned: actual start,
+    end = data_date + remaining.
     Not-started tasks are constrained to start no earlier than data_date.
     """
     model = cp_model.CpModel()
@@ -85,7 +86,9 @@ def solve_model_common_setup(tasks_df, rels_df,
             if duration == 0 and row['duration'] > 0:
                 duration = 1
 
-            model.NewIntervalVar(start_var, duration, end_var, f'interval_{t_id}')
+            model.NewIntervalVar(
+                start_var, duration, end_var, f'interval_{t_id}'
+            )
 
             # Cannot start before the data date
             if data_date_offset > 0:
@@ -157,7 +160,7 @@ def post_process_floating_tasks(results_df, rels_df):
             )
 
     def has_resource_overlap(task_id, resource, new_start, new_end):
-        """Check if [new_start, new_end) overlaps other tasks on same resource."""
+        """Check if [new_start, new_end) overlaps tasks on same resource."""
         for other_id, other_start, other_end in resource_tasks[resource]:
             if other_id != task_id:
                 if new_start < other_end and new_end > other_start:
@@ -212,7 +215,9 @@ def post_process_floating_tasks(results_df, rels_df):
                             old_entry = (
                                 t_id, data['start_day'], data['end_day']
                             )
-                            if resource and old_entry in resource_tasks[resource]:
+                            if resource and (
+                                old_entry in resource_tasks[resource]
+                            ):
                                 resource_tasks[resource].remove(old_entry)
                                 resource_tasks[resource].append(
                                     (t_id, new_start, new_end)
@@ -416,16 +421,18 @@ def run_scenario_type_2(tasks_df, rels_df, xer=None, project=None,
 
             if vars_.get('fixed', False):
                 # Retain the UDF resource name with a status suffix
+                is_done = vars_.get('is_complete')
+                suffix = "Completed" if is_done else "In Progress"
                 if base_res != "Unassigned / Milestone":
-                    suffix = "Completed" if vars_.get('is_complete') else "In Progress"
                     res_name = f"{base_res} ({suffix})"
                 else:
-                    res_name = "Completed" if vars_.get('is_complete') else "In Progress"
+                    res_name = suffix
             elif t_id in task_res_map and vars_['duration'] > 0:
                 res_name = base_res  # fallback if no sub found
                 nb_subs = subcrew_config.get(base_res, 1)
                 for s in range(nb_subs):
-                    if solver.Value(sub_assignment.get((t_id, base_res, s), 0)):
+                    key = (t_id, base_res, s)
+                    if solver.Value(sub_assignment.get(key, 0)):
                         res_name = f"{base_res} - Sub {s+1}"
                         break
             else:

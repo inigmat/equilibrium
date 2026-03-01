@@ -1,4 +1,5 @@
 import datetime
+import os
 
 import streamlit as st
 from ortools.sat.python import cp_model
@@ -16,6 +17,25 @@ MIMECONST = (
     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
 )
 MPP_EXTENSIONS = ('.mpp', '.mspdi', '.mpx')
+
+_SAMPLES_DIR = os.path.join(os.path.dirname(__file__), 'samples')
+SAMPLE_FILES = {
+    'MDL4D.xer': os.path.join(_SAMPLES_DIR, 'MDL4D.xer'),
+    'MDL4D.mpp': os.path.join(_SAMPLES_DIR, 'MDL4D.mpp'),
+}
+
+
+class _FileWrapper:
+    """Wraps an on-disk file to match the Streamlit UploadedFile interface."""
+
+    def __init__(self, path: str):
+        self.name = os.path.basename(path)
+        with open(path, 'rb') as f:
+            self._data = f.read()
+
+    def read(self):
+        return self._data
+
 
 # Streamlit page configuration
 st.set_page_config(page_title="Schedule Optimizer", layout="wide")
@@ -81,6 +101,19 @@ def main():
         type=["xer", "mpp", "mspdi", "mpx", "xml"],
     )
 
+    # Sample file selection via session state
+    if 'sample_name' not in st.session_state:
+        st.session_state.sample_name = None
+    # Uploading a real file clears any loaded sample
+    if uploaded_file:
+        st.session_state.sample_name = None
+
+    active_file = uploaded_file
+    if not active_file and st.session_state.sample_name:
+        active_file = _FileWrapper(
+            SAMPLE_FILES[st.session_state.sample_name]
+        )
+
     # Project Start Date configuration
     st.sidebar.subheader("Project Start Date")
     use_file_date = st.sidebar.checkbox("Use date from file", value=True)
@@ -121,10 +154,41 @@ def main():
             "sub-crews."
         )
 
-    # Process file if uploaded
-    if uploaded_file:
+    # Show sample file picker when nothing is loaded yet
+    if not active_file:
+        st.info(
+            "Upload a schedule file in the sidebar, "
+            "or try one of the sample files below."
+        )
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button(
+                "Load sample: MDL4D.xer (Primavera P6)",
+                use_container_width=True,
+            ):
+                st.session_state.sample_name = 'MDL4D.xer'
+                st.rerun()
+        with col2:
+            if st.button(
+                "Load sample: MDL4D.mpp (MS Project)",
+                use_container_width=True,
+            ):
+                st.session_state.sample_name = 'MDL4D.mpp'
+                st.rerun()
+
+    # Process file if one is available (uploaded or sample)
+    if active_file:
+        # Show which sample is loaded (with an option to clear it)
+        if st.session_state.sample_name:
+            st.sidebar.info(
+                f"Sample loaded: **{st.session_state.sample_name}**"
+            )
+            if st.sidebar.button("Clear sample"):
+                st.session_state.sample_name = None
+                st.rerun()
+
         try:
-            filename = uploaded_file.name
+            filename = active_file.name
             mpp_file = _is_mpp(filename)
 
             # ---------------------------------------------------------------
@@ -133,10 +197,10 @@ def main():
             if mpp_file:
                 (tasks_df, rels_df, mile_mask,
                  data_date, project_start_file,
-                 task_res_map) = load_and_prepare_mpp(uploaded_file)
+                 task_res_map) = load_and_prepare_mpp(active_file)
                 xer, project = None, None
             else:
-                xer, project = load_and_parse_xer(uploaded_file)
+                xer, project = load_and_parse_xer(active_file)
                 tasks_df, rels_df, mile_mask, data_date = prepare_dataframes(
                     project
                 )
@@ -162,7 +226,8 @@ def main():
                     # Resources come from the file's resource assignments
                     if task_res_map:
                         st.sidebar.caption(
-                            "Resources read from MS Project resource assignments."
+                            "Resources read from MS Project "
+                            "resource assignments."
                         )
                         _, subcrew_config = _build_subcrew_ui(
                             tasks_df, task_res_map
@@ -170,7 +235,8 @@ def main():
                     else:
                         st.sidebar.warning(
                             "No resource assignments found in the file. "
-                            "Scenario 2 requires tasks with assigned resources."
+                            "Scenario 2 requires tasks with "
+                            "assigned resources."
                         )
                 else:
                     # XER: resources come from a UDF field
@@ -213,7 +279,7 @@ def main():
             with st.expander("Preview Raw Task Data"):
                 st.dataframe(
                     tasks_df[['task_code', 'task_name', 'duration',
-                               'task_type']].head()
+                              'task_type']].head()
                 )
 
             # ---------------------------------------------------------------
@@ -264,7 +330,9 @@ def main():
 
                         with tab2:
                             display_df = res_df.merge(
-                                tasks_df[['task_id', 'task_code', 'task_name']],
+                                tasks_df[[
+                                    'task_id', 'task_code', 'task_name',
+                                ]],
                                 on='task_id',
                             )
                             if mode == "Type 2: Existing Resource Check":

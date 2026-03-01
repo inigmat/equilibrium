@@ -1,0 +1,646 @@
+ERMHDR	20.12	2025-12-02	Project	NigmatullinIZ	Нигматуллин Ильгиз Зуфарович	dbxDatabaseNoName	Project Management	RUB
+%T	CURRTYPE
+%F	curr_id	decimal_digit_cnt	curr_symbol	decimal_symbol	digit_group_symbol	pos_curr_fmt_type	neg_curr_fmt_type	curr_type	curr_short_name	group_digit_cnt	base_exch_rate
+%R	1	2	$	.	,	#1.1	(#1.1)	US Dollar	USD	3	1
+%R	13	2	?	.	,	#1.1	(#1.1)	Pound Sterling	GBP	3	0,618603
+%R	14	2	?	.	,	#1.1	(#1.1)	Japanese Yen	JPY	3	91,2708
+%R	15	2	€	.	,	#1.1	(#1.1)	Euro	EUR	3	0,689711
+%R	16	2	?	.	,	#1.1	(#1.1)	Chinese Yuan Renminbi	CNY	3	6,82502
+%R	17	2	$	.	,	#1.1	(#1.1)	Canadian Dollar	CAD	3	1,03757
+%R	18	2	RUB	,	.	#1.1	(#1.1)	Russian Ruble	RUB	3	0,033948
+%R	19	2	$	.	,	#1.1	(#1.1)	Argentine Peso	ARS	3	3,79109
+%R	20	2	$b	.	,	#1.1	(#1.1)	Bolivian Boliviano	BOB	3	7,5708
+%R	21	2	R$	.	,	#1.1	(#1.1)	Brazilian Real	BRL	3	1,7665
+%R	22	2	$	.	,	#1.1	(#1.1)	Chilean Peso	CLP	3	507,58
+%R	23	2	$	.	,	#1.1	(#1.1)	Columbian Peso	COP	3	1957,74
+%R	24	2	$	.	,	#1.1	(#1.1)	Guyanese Dollar	GYD	3	202,95
+%R	25	2	Gs	.	,	#1.1	(#1.1)	Paraguayan Guarani	PYG	3	4640
+%R	26	2	S/.	.	,	#1.1	(#1.1)	Peruvian Nuevo Sol	PEN	3	2,7244
+%R	27	2	$	.	,	#1.1	(#1.1)	Surinamese Dollar	SRD	3	2,8
+%R	28	2	Bs	.	,	#1.1	(#1.1)	Venezuelan Bolivar Fuerto	VEF	3	2,1446
+%R	29	2	$U	.	,	#1.1	(#1.1)	Uruguayan Peso	UYU	3	21,247
+%T	FINTMPL
+%F	fintmpl_id	fintmpl_name	default_flag
+%R	1	Calendar	N
+%T	LOCATION
+%F	location_id	location_name	location_type	address_line1	address_line2	address_line3	city_name	municipality_name	state_name	state_code	country_name	country_code	postal_code	longitude	latitude
+%R	293	Paris	LT_Point				Paris				France	FRA		2,38519	48,90189
+%R	299	Moscow	LT_Point				Moscow				Russia	RUS		38,5	55,05
+%R	301	Kansas City	City				Kansas City		KS	KS	United States	USA		-94,72718	39,11834
+%R	302	Olathe	City				Olathe		KS	KS	United States	USA		-94,81468	38,88695
+%R	303	Overland Park	City				Overland Park		KS	KS	United States	USA		-94,68524	38,91473
+%R	304	Topeka	City				Topeka		KS	KS	United States	USA		-95,6922	39,03778
+%R	305	Wichita	City				Wichita		KS	KS	United States	USA		-97,3431	37,68724
+%R	306	New Orleans	City				New Orleans		LA	LA	United States	USA		-89,93096	30,06881
+%R	307	Baltimore	City				Baltimore		MD	MD	United States	USA		-76,61219	39,29038
+%R	308	Saint Louis	City				St Louis		MO	MO	United States	USA		-90,19789	38,62727
+%R	309	Cincinnati	City				Cincinnati		OH	OH	United States	USA		-84,51817	39,09836
+%R	311	Dayton	City				Dayton		OH	OH	United States	USA		-84,19963	39,77739
+%R	312	Philadelphia	City				Philadelphia		PA	PA	United States	USA		-75,16379	39,95234
+%R	313	Alexandria	City				Alexandria		VA	VA	United States	USA		-77,04692	38,80484
+%R	314	Chesapeake	City				Chesapeake		VA	VA	United States	USA		-76,31216	36,68765
+%R	315	Hampton	City				Hampton		VA	VA	United States	USA		-76,333	37,06265
+%R	316	Newport News	City				Newport News		VA	VA	United States	USA		-76,50801	37,06265
+%R	317	Norfolk	City				Norfolk		VA	VA	United States	USA		-76,26188	36,89126
+%R	318	Richmond	City				Richmond		VA	VA	United States	USA		-77,46026	37,55376
+%R	319	Virginia Beach	City				Virginia Beach		VA	VA	United States	USA		-76,00521	36,73765
+%R	320	Cedar Rapids	City				Cedar Rapids		IA	IA	United States	USA		-91,66962	41,97306
+%R	321	Chicago	City				Chicago		IL	IL	United States	USA		-87,68455	41,83681
+%R	322	Boston	City				Boston		MA	MA	United States	USA		-71,01667	42,33228
+%R	323	Cambridge	City				Cambridge		MA	MA	United States	USA		-71,11616	42,37093
+%R	324	Lowell	City				Lowell		MA	MA	United States	USA		-71,32148	42,63886
+%R	326	Worcester	City				Worcester		MA	MA	United States	USA		-71,80778	42,27047
+%R	327	Ann Arbor	City				Ann Arbor		MI	MI	United States	USA		-83,73077	42,27532
+%R	328	Detroit	City				Detroit		MI	MI	United States	USA		-83,10215	42,38309
+%R	329	Flint	City				Flint		MI	MI	United States	USA		-83,69273	43,02281
+%R	330	Grand Rapids	City				Grand Rapids		MI	MI	United States	USA		-85,65586	42,96142
+%R	331	Lansing	City				Lansing		MI	MI	United States	USA		-84,55303	42,71031
+%R	332	Sterling Heights	City				Sterling Heights		MI	MI	United States	USA		-83,03048	42,58003
+%R	333	Warren	City				Warren		MI	MI	United States	USA		-83,02826	42,49309
+%R	334	Fargo	City				Fargo		ND	ND	United States	USA		-96,81758	46,87663
+%R	335	Manchester	City				Manchester		NH	NH	United States	USA		-71,44451	42,98446
+%R	336	Elizabeth	City				Elizabeth		NJ	NJ	United States	USA		-74,19376	40,66649
+%R	337	Jersey City	City				Jersey City		NJ	NJ	United States	USA		-74,06476	40,71142
+%R	338	Newark	City				Newark		NJ	NJ	United States	USA		-74,17292	40,72427
+%R	339	Paterson	City				Paterson		NJ	NJ	United States	USA		-74,16292	40,91454
+%R	340	Buffalo	City				Buffalo		NY	NY	United States	USA		-78,85948	42,88978
+%R	341	Rochester	City				Rochester		NY	NY	United States	USA		-77,61556	43,16867
+%R	342	Syracuse	City				Syracuse		NY	NY	United States	USA		-76,14381	43,04118
+%R	343	Yonkers	City				Yonkers		NY	NY	United States	USA		-73,86708	40,94704
+%R	344	Akron	City				Akron		OH	OH	United States	USA		-81,51845	41,07478
+%R	345	Cleveland	City				Cleveland		OH	OH	United States	USA		-81,66291	41,48172
+%R	346	Toledo	City				Toledo		OH	OH	United States	USA		-83,57827	41,66449
+%R	347	Allentown	City				Allentown		PA	PA	United States	USA		-75,47379	40,60038
+%R	348	Erie	City				Erie		PA	PA	United States	USA		-80,07395	42,11589
+%R	349	Pittsburgh	City				Pittsburgh		PA	PA	United States	USA		-79,97116	40,44257
+%R	350	Providence	City				Providence		RI	RI	United States	USA		-71,41862	41,82287
+%R	351	Sioux Falls	City				Sioux Falls		SD	SD	United States	USA		-96,73033	43,54664
+%R	352	Green Bay	City				Green Bay		WI	WI	United States	USA		-87,98983	44,52166
+%R	353	Madison	City				Madison		WI	WI	United States	USA		-89,38762	43,07972
+%R	354	Milwaukee	City				Milwaukee		WI	WI	United States	USA		-87,96648	43,06335
+%R	355	Stamford	City				Stamford		CT	CT	United States	USA		-73,54973	41,07812
+%R	356	Waterbury	City				Waterbury		CT	CT	United States	USA		-73,03622	41,5582
+%R	358	Evansville	City				Evansville		IN	IN	United States	USA		-87,54248	37,98677
+%R	359	Fort Wayne	City				Fort Wayne		IN	IN	United States	USA		-85,14328	41,08725
+%R	360	New York	City				New York		NY	NY	United States	USA		-73,93848	40,66383
+%R	361	Indianapolis	City				Indianapolis		IN	IN	United States	USA		-86,14576	39,77706
+%R	362	Joliet	City				Joliet		IL	IL	United States	USA		-88,14061	41,52246
+%R	363	South Bend	City				South Bend		IN	IN	United States	USA		-86,26853	41,67666
+%R	365	Omaha	City				Omaha		NE	NE	United States	USA		-96,02846	41,26386
+%R	366	Durham	City				Durham		NC	NC	United States	USA		-78,90713	35,98209
+%R	367	Fayetteville	City				Fayetteville		NC	NC	United States	USA		-78,95175	35,06034
+%R	368	Greensboro	City				Greensboro		NC	NC	United States	USA		-79,82472	36,09534
+%R	369	Cape Coral	City				Cape Coral		FL	FL	United States	USA		-81,99646	26,64379
+%R	370	Chattanooga	City				Chattanooga		TN	TN	United States	USA		-85,24675	35,06613
+%R	371	Clearwater	City				Clearwater		FL	FL	United States	USA		-82,76455	27,9795
+%R	372	Columbia	City				Columbia		SC	SC	United States	USA		-80,9025	34,03642
+%R	373	Columbus	City				Columbus		GA	GA	United States	USA		-84,87703	32,50996
+%R	374	Miami Gardens	City				Miami Gardens		FL	FL	United States	USA		-80,24254	25,94325
+%R	375	Miramar	City				Miramar		FL	FL	United States	USA		-80,335	25,97737
+%R	376	Orlando	City				Orlando		FL	FL	United States	USA		-81,29926	28,41458
+%R	377	Palm Bay	City				Palm Bay		FL	FL	United States	USA		-80,66293	27,98609
+%R	378	Port Saint Lucie	City				Port St Lucie		FL	FL	United States	USA		-80,38252	27,28025
+%R	379	Raleigh	City				Raleigh		NC	NC	United States	USA		-78,64687	35,83353
+%R	380	Hialeah	City				Hialeah		FL	FL	United States	USA		-80,30426	25,86936
+%R	381	High Point	City				High Point		NC	NC	United States	USA		-79,99319	35,98778
+%R	382	Hollywood	City				Hollywood		FL	FL	United States	USA		-80,16453	26,0303
+%R	383	Jackson	City				Jackson		MS	MS	United States	USA		-90,20926	32,31642
+%R	384	Jacksonville	City				Jacksonville		FL	FL	United States	USA		-81,66023	30,33698
+%R	385	Savannah	City				Savannah		GA	GA	United States	USA		-81,15775	32,00106
+%R	386	Tallahassee	City				Tallahassee		FL	FL	United States	USA		-84,25271	30,45557
+%R	387	Wilmington	City				Wilmington		NC	NC	United States	USA		-77,88452	34,21318
+%R	388	Centennial	City				Centennial		CO	CO	United States	USA		-104,86834	39,59284
+%R	389	Chandler	City				Chandler		AZ	AZ	United States	USA		-111,85235	33,28338
+%R	390	Chula Vista	City				Chula Vista		CA	CA	United States	USA		-117,01409	32,62859
+%R	391	Abilene	City				Abilene		TX	TX	United States	USA		-99,73851	32,45522
+%R	392	Amarillo	City				Amarillo		TX	TX	United States	USA		-101,82675	35,20188
+%R	393	Anaheim	City				Anaheim		CA	CA	United States	USA		-117,76035	33,85839
+%R	394	Arlington	City				Arlington		TX	TX	United States	USA		-97,12537	32,69896
+%R	395	Aurora	City				Aurora		CO	CO	United States	USA		-104,68683	39,68884
+%R	396	Beaumont	City				Beaumont		TX	TX	United States	USA		-94,14408	30,08439
+%R	397	Bellevue	City				Bellevue		WA	WA	United States	USA		-122,15358	47,59657
+%R	398	Billings	City				Billings		MT	MT	United States	USA		-108,54803	45,78915
+%R	399	Brownsville	City				Brownsville		TX	TX	United States	USA		-97,45664	25,99812
+%R	400	Carrollton	City				Carrollton		TX	TX	United States	USA		-96,90027	32,98832
+%R	401	Irvine	City				Irvine		CA	CA	United States	USA		-117,77287	33,67827
+%R	402	Irving	City				Irving		TX	TX	United States	USA		-96,97033	32,85814
+%R	403	Corona	City				Corona		CA	CA	United States	USA		-117,5632	33,86212
+%R	404	Corpus Christi	City				Corpus Christi		TX	TX	United States	USA		-97,28106	27,73508
+%R	405	Costa Mesa	City				Costa Mesa		CA	CA	United States	USA		-117,91356	33,66693
+%R	406	Denton	City				Denton		TX	TX	United States	USA		-97,14576	33,2052
+%R	407	El Monte	City				El Monte		CA	CA	United States	USA		-118,02895	34,0739
+%R	408	Fort Collins	City				Fort Collins		CO	CO	United States	USA		-105,0668	40,55144
+%R	409	Fremont	City				Fremont		CA	CA	United States	USA		-121,93811	37,49196
+%R	410	Frisco	City				Frisco		TX	TX	United States	USA		-96,81999	33,15034
+%R	411	Grand Prairie	City				Grand Prairie		TX	TX	United States	USA		-97,02121	32,68646
+%R	412	Gresham	City				Gresham		OR	OR	United States	USA		-122,44066	45,50416
+%R	413	Los Angeles	City				Los Angeles		CA	CA	United States	USA		-118,41173	34,02048
+%R	414	Reno	City				Reno		NV	NV	United States	USA		-119,85149	39,55131
+%R	415	McAllen	City				McAllen		TX	TX	United States	USA		-98,24489	26,21898
+%R	416	McKinney	City				McKinney		TX	TX	United States	USA		-96,66708	33,19953
+%R	417	Mesa	City				Mesa		AZ	AZ	United States	USA		-111,72282	33,40491
+%R	418	Mesquite	City				Mesquite		TX	TX	United States	USA		-96,59272	32,76411
+%R	419	Murrieta	City				Murrieta		CA	CA	United States	USA		-117,19048	33,57195
+%R	420	Norman	City				Norman		OK	OK	United States	USA		-97,34808	35,2332
+%R	421	Oklahoma City	City				Oklahoma City		OK	OK	United States	USA		-97,51375	35,46724
+%R	422	Pasadena	City				Houston-Galveston METRO Area		TX	TX	United States	USA		-95,14685	29,65752
+%R	423	Peoria	City				Phoenix Metro Area		AZ	AZ	United States	USA		-112,29999	33,78575
+%R	424	Plano	City				Plano		TX	TX	United States	USA		-96,74852	33,05018
+%R	425	Pueblo	City				Pueblo		CO	CO	United States	USA		-104,6127	38,26923
+%R	426	Rancho Cucamonga	City				Rancho Cucamonga		CA	CA	United States	USA		-117,56814	34,12366
+%R	427	Laredo	City				Laredo		TX	TX	United States	USA		-99,48767	27,55087
+%R	428	Las Vegas	City				Las Vegas		NV	NV	United States	USA		-115,26172	36,22639
+%R	429	San Buenaventura	City				Los Angeles Metro Area		CA	CA	United States	USA		-119,25766	34,26627
+%R	430	San Francisco	City				San Francisco		CA	CA	United States	USA		-122,95081	37,71233
+%R	431	Santa Clarita	City				Santa Clarita		CA	CA	United States	USA		-118,50322	34,41123
+%R	432	Scottsdale	City				Scottsdale		AZ	AZ	United States	USA		-111,86508	33,6869
+%R	433	Seattle	City				Seattle		WA	WA	United States	USA		-122,35103	47,62049
+%R	434	Surprise	City				Phoenix Metro Area		AZ	AZ	United States	USA		-112,45173	33,66348
+%R	435	Tacoma	City				Tacoma		WA	WA	United States	USA		-122,45938	47,25174
+%R	436	Tempe	City				Tempe		AZ	AZ	United States	USA		-111,9318	33,38825
+%R	437	Thornton	City				Thornton		CO	CO	United States	USA		-104,94714	39,91813
+%R	438	Thousand Oaks	City				Thousand Oaks		CA	CA	United States	USA		-118,87514	34,19173
+%R	439	Tucson	City				Tucson		AZ	AZ	United States	USA		-110,87695	32,15667
+%R	440	Vancouver	City				Vancouver		WA	WA	United States	USA		-122,60074	45,63573
+%R	441	Victorville	City				Victorville		CA	CA	United States	USA		-117,35388	34,52758
+%R	442	Waco	City				Waco		TX	TX	United States	USA		-97,18814	31,56041
+%R	443	Bridgeport	City				Bridgeport		CT	CT	United States	USA		-73,19559	41,18707
+%R	444	Hartford	City				Hartford		CT	CT	United States	USA		-72,68325	41,76611
+%R	445	New Haven	City				New Haven		CT	CT	United States	USA		-72,92408	41,31018
+%R	447	Des Moines	City				Des Moines		IA	IA	United States	USA		-93,61707	41,57426
+%R	448	Elgin	City				Elgin		IL	IL	United States	USA		-88,31958	42,03825
+%R	449	Naperville	City				Naperville		IL	IL	United States	USA		-88,16563	41,74819
+%R	450	Independence	City				Independence		MO	MO	United States	USA		-94,35026	39,08696
+%R	451	Springfield	City				Springfield		IL	IL	United States	USA		-89,65341	39,7722
+%R	452	Rockford	City				Rockford		IL	IL	United States	USA		-89,06211	42,26366
+%R	453	Atlanta	City				Atlanta		GA	GA	United States	USA		-84,42288	33,763
+%R	454	Baton Rouge	City				Baton Rouge		LA	LA	United States	USA		-91,12648	30,45108
+%R	455	Clarksville	City				Clarksville		TN	TN	United States	USA		-87,34448	36,56979
+%R	456	Mobile	City				Mobile		AL	AL	United States	USA		-88,08908	30,67398
+%R	457	Montgomery	City				Montgomery		AL	AL	United States	USA		-86,2674	32,34804
+%R	458	Murfreesboro	City				Murfreesboro		TN	TN	United States	USA		-86,40875	35,85247
+%R	459	Pembroke Pines	City				Pembroke Pines		FL	FL	United States	USA		-80,33796	26,01265
+%R	460	Huntsville	City				Huntsville		AL	AL	United States	USA		-86,62431	34,69942
+%R	461	Knoxville	City				Knoxville		TN	TN	United States	USA		-83,94992	35,96882
+%R	462	Lafayette	City				Lafayette		LA	LA	United States	USA		-92,03168	30,21199
+%R	463	Little Rock	City				Little Rock		AR	AR	United States	USA		-92,35952	34,72566
+%R	464	Memphis	City				Memphis		TN	TN	United States	USA		-89,97908	35,10454
+%R	465	Saint Petersburg	City				St Petersburg		FL	FL	United States	USA		-82,64295	27,76135
+%R	466	Shreveport	City				Shreveport		LA	LA	United States	USA		-93,79624	32,46716
+%R	467	Tampa	City				Tampa		FL	FL	United States	USA		-82,47641	27,96802
+%R	468	Winston-Salem	City				Winston-Salem		NC	NC	United States	USA		-80,26056	36,10282
+%R	500	Sydney	LT_Point				Sydney				Australia	AUS		151,1939	-33,8694
+%R	502	Melbourne	LT_Point				Melbourne				Australia	AUS		144,96306	-37,81427
+%R	503	Perth	LT_Point				Perth				Australia	AUS		115,86248	-31,95472
+%R	506	Brisbane	LT_Point				Brisbane				Australia	AUS		153,02342	-27,46846
+%R	508	Bangalore	LT_Point				Bangalore				India	IND		77,4	12,59
+%R	509	Calcutta	LT_Point				Calcutta				India	IND		88,24	22,36
+%R	510	Delhi	LT_Point				Delhi		DL	DL	India	IND		77,20735	28,59584
+%R	511	New Delhi	LT_Point				New Dehli				India	IND		77,13	28,37
+%R	512	Beijing	LT_Point				Beijing				China	CHN		116,2	39,55
+%R	513	Harbin	LT_Point				Harbin				China	CHN		126,41	45,45
+%R	514	Shanghai	LT_Point				Shanghai				China	CHN		121,22	31,06
+%R	515	Wuhan	LT_Point				Wuhan				China	CHN		108,54	30,35
+%R	517	Krasnodar	LT_Point				Krasnodar				Russia	RUS		39	45,02
+%R	518	Vladivostok	LT_Point				Vladivostok				Russia	RUS		131,53	43,09
+%R	519	Sanya	LT_Point				Sanya				China	CHN		109,51191	18,25285
+%R	520	London	LT_Point				London				United Kingdom	GBR		-0,153	51,54917
+%R	521	Hamburg	LT_Point				Hamburg				Germany	DEU		9,99247	53,55334
+%R	522	Madrid	LT_Point				Madrid				Spain	ESP		3,41	40,24
+%R	523	Lima	LT_Point				Lima				Peru	PER		-77,0268	-12,05614
+%R	524	Panama City	LT_Point				Panama City				Panama	PAN		-79,51973	8,9936
+%R	525	Montevideo	LT_Point				Montevideo				Uruguay	URY		-56,16302	-34,87416
+%R	526	Managua	LT_Point				Managua				Nicaragua	NIC		86,18	12,06
+%R	527	Guatemala City	LT_Point				Guatemala City				Guatemala	GTM		-90,51327	14,64072
+%R	528	Antofagasta	LT_Point				Antofagasta				Chile	CHL		-70,39275	-23,63146
+%R	529	Baytown	LT_Point				Baytown		TX	TX	United States	USA		-94,9965	29,8075
+%R	530	Rio de Janeiro	LT_Point				Rio de Janeiro				Brazil	BRA		-43,19475	-22,97667
+%R	531	Brasilia	LT_Point				Brasilia				Brazil	BRA		-52,6694	-26,22041
+%R	532	Cuiaba	LT_Point				Cuiaba				Brazil	BRA		-56,0949	-15,59901
+%R	533	Sao Paulo	LT_Point				Sao Paulo				Brazil	BRA		-50,34086	-27,79326
+%R	540	SanFran 14 St	LT_Point	510 14th St			San Francisco		CA	CA	United States	USA	94103	-122,42494	37,76798
+%R	541	SanFran 18 St	LT_Point	2828 18th St			San Francisco		CA	CA	United States	USA	94110	-122,4104128571	37,7617385714
+%R	542	SanFran 19 St	LT_Point	3364 19th St			San Francisco		CA	CA	United States	USA	94110	-122,41851	37,76026
+%R	543	SanFran 22 Ave	LT_Point	208 22nd Ave			San Francisco		CA	CA	United States	USA	94121	-122,48178	37,78379
+%R	544	SanFran 46 Ave	LT_Point	507 46th Ave			San Francisco		CA	CA	United States	USA	94121	-122,50719	37,77879
+%R	545	SanFran Balboa St	LT_Point	314 Balboa St			San Francisco		CA	CA	United States	USA	94118	-122,4620242857	37,7773114286
+%R	546	SanFran Bay St	LT_Point	2 Bay St			San Francisco		CA	CA	United States	USA	94133	-122,40602	37,80661
+%R	547	SanFran Beach St	LT_Point	2000 Beach St			San Francisco		CA	CA	United States	USA	94123	-122,44223	37,80388
+%R	548	SanFran Broadway St	LT_Point	1450 Broadway			San Francisco		CA	CA	United States	USA	94109	-122,4209	37,79603
+%R	549	SanFran Buchanon St	LT_Point	2400 Buchanan St			San Francisco		CA	CA	United States	USA	94115	-122,43113	37,79224
+%R	550	SanFran Cabrillo St	LT_Point	248 Cabrillo St			San Francisco		CA	CA	United States	USA	94118	-122,46145	37,77548
+%R	551	SanFran California St	LT_Point	1530 California St			San Francisco		CA	CA	United States	USA	94109	-122,41959	37,79072
+%R	552	SanFran Chestnut St	LT_Point	1555 Chestnut St			San Francisco		CA	CA	United States	USA	94123	-122,42891	37,80175
+%R	553	SanFran Clay St	LT_Point	1260 Clay St			San Francisco		CA	CA	United States	USA	94108	-122,41361	37,79334
+%R	554	SanFran Duboce Ave	LT_Point	460 Duboce Ave			San Francisco		CA	CA	United States	USA	94117	-122,43013	37,7693957143
+%R	555	SanFran Eddy St	LT_Point	730 Eddy St			San Francisco		CA	CA	United States	USA	94109	-122,41966	37,78302
+%R	556	SanFran Ellis St	LT_Point	1860 Ellis St			San Francisco		CA	CA	United States	USA	94115	-122,43673	37,78182
+%R	557	SanFran Fulton St	LT_Point	1176 Fulton St			San Francisco		CA	CA	United States	USA	94117	-122,43605	37,77713
+%R	558	SanFran Geary Blvd	LT_Point	1750 Geary Blvd			San Francisco		CA	CA	United States	USA	94115	-122,4321244	37,784626
+%R	559	SanFran Gough St	LT_Point	1333 Gough St			San Francisco		CA	CA	United States	USA	94109	-122,4247389796	37,7856646939
+%R	560	SanFran Greenwich St	LT_Point	568 Greenwich St			San Francisco		CA	CA	United States	USA	94133	-122,4089	37,80239
+%R	561	SanFran Hayes St	LT_Point	2076 Hayes St			San Francisco		CA	CA	United States	USA	94117	-122,4506008163	37,7733726531
+%R	562	SanFran Hyde St	LT_Point	2976 Hyde St			San Francisco		CA	CA	United States	USA	94109	-122,4209916842	37,808484263
+%R	563	SanFran Irving St	LT_Point	2024 Irving St			San Francisco		CA	CA	United States	USA	94122	-122,47976	37,76345
+%R	564	SanFran Jackson St	LT_Point	2700 Jackson St			San Francisco		CA	CA	United States	USA	94115	-122,4401	37,79175
+%R	565	SanFran Judah St	LT_Point	2310 Judah St			San Francisco		CA	CA	United States	USA	94122	-122,4867481633	37,761284898
+%R	566	SanFran Kirkham St	LT_Point	3324 Kirkham St			San Francisco		CA	CA	United States	USA	94122	-122,49664	37,75897
+%R	567	SanFran Lombard St	LT_Point	50 Lombard St			San Francisco		CA	CA	United States	USA	94111	-122,40277	37,8041
+%R	568	SanFran Marion Pl	LT_Point	2 Marion Pl			San Francisco		CA	CA	United States	USA	94133	-122,41522	37,79968
+%R	569	SanFran Market St	LT_Point	768 Market St			San Francisco		CA	CA	United States	USA	94102	-122,4054	37,7861
+%R	570	SanFran Mission St	LT_Point	23 Mission St			San Francisco		CA	CA	United States	USA	94105	-122,39303	37,79338
+%R	571	SanFran Moraga St	LT_Point	220 Moraga St			San Francisco		CA	CA	United States	USA	94122	-122,4655106757	37,7565858108
+%R	572	SanFran Oak St	LT_Point	1204 Oak St			San Francisco		CA	CA	United States	USA	94117	-122,43948	37,77286
+%R	573	SanFran Ofarrell St	LT_Point	2546 O'Farrell			San Francisco		CA	CA	United States	USA	94115	-122,4465159184	37,7811885714
+%R	574	SanFran Pacific Ave	LT_Point	592 Pacific Ave			San Francisco		CA	CA	United States	USA	94133	-122,40512	37,7971
+%R	575	SanFran Pine St	LT_Point	2666 Pine St			San Francisco		CA	CA	United States	USA	94115	-122,4397	37,78719
+%R	576	SanFran Point St	LT_Point	1099 N Point St			San Francisco		CA	CA	United States	USA	94109	-122,42519	37,80508
+%R	577	SanFran Post St	LT_Point	868 Post St			San Francisco		CA	CA	United States	USA	94109	-122,4161210204	37,7873112245
+%R	578	SanFran Quintara St	LT_Point	1440 Quintara St			San Francisco		CA	CA	United States	USA	94116	-122,48108	37,74842
+%R	579	SanFran Sacramento St	LT_Point	2770 Sacramento St			San Francisco		CA	CA	United States	USA	94115	-122,43842	37,78927
+%R	580	SanFran Sansome St	LT_Point	475 Sansome St			San Francisco		CA	CA	United States	USA	94111	-122,40136	37,79465
+%R	581	SanFran Sea Cliff Ave	LT_Point	248 Sea Cliff Ave			San Francisco		CA	CA	United States	USA	94121	-122,48867	37,78864
+%R	582	SanFran South St	LT_Point	South St			San Francisco		CA	CA	United States	USA	94158	-122,38921	37,7688
+%R	583	SanFran Spear St	LT_Point	11 Spear St			San Francisco		CA	CA	United States	USA	94105	-122,39533	37,79347
+%R	584	SanFran Stockton St	LT_Point	120 Stockton St			San Francisco		CA	CA	United States	USA	94108	-122,40644	37,7869
+%R	585	SanFran Sutter St	LT_Point	620 Sutter St			San Francisco		CA	CA	United States	USA	94102	-122,41068	37,78896
+%R	586	SanFran Taylor St	LT_Point	403 Taylor St			San Francisco		CA	CA	United States	USA	94102	-122,41136	37,7862
+%R	587	SanFran Union St	LT_Point	2 Union St			San Francisco		CA	CA	United States	USA	94111	-122,40041	37,80153
+%R	588	SanFran Waller St	LT_Point	1899 Waller St			San Francisco		CA	CA	United States	USA	94117	-122,45528	37,76822
+%R	589	SanFran Washington St	LT_Point	2576 Washington St			San Francisco		CA	CA	United States	USA	94115	-122,43568	37,79143
+%R	590	Miami	LT_Point				Miami		FL	FL	United States	USA		-80,19773	25,77481
+%R	610	Anchorage	LT_Point				Anchorage		AK	AK	United States	USA		-149,85838	61,21756
+%T	NONWORK
+%F	nonwork_type_id	seq_num	nonwork_code	nonwork_type
+%R	11	3	VAC	Vacation
+%R	12	20004	JURY	Jury Duty
+%R	13	1	HOL	Holiday
+%R	100	4	SICK	Sick Leave
+%R	105	10004	COH	Corporate Overhead
+%R	106	2	G&A	General & Accounting
+%R	107	20005	PERS	Personal Time
+%R	108	20105	SLA	SLA
+%R	109	20205	Help Desk	Help Desk
+%R	110	20305	Problem	Problem Mgmt
+%R	111	20405	Change	Change Mgmt
+%R	112	20505	Incident	Incident Mgmt
+%T	OBS
+%F	obs_id	parent_obs_id	guid	seq_num	obs_name	obs_descr
+%R	540			0	Черногорская ГРК	<html>  <head>      </head>  <body bgcolor=""#ffffff"">    Enterprise  </body></html>
+%T	UDFTYPE
+%F	udf_type_id	table_name	udf_type_name	udf_type_label	logical_data_type	super_flag	indicator_expression	summary_indicator_expression
+%R	85386	TASK	user_field_85386	Бригады	FT_TEXT	N		
+%T	ROLES
+%F	role_id	parent_role_id	seq_num	role_name	role_short_name	pobs_id	def_cost_qty_link_flag	cost_qty_type	role_descr	last_checksum
+%R	1165		2	E&C Roles	E&C		Y	QT_Hour		
+%R	1567	1165	0	Trades	Trades		Y	QT_Hour		
+%T	PROJECT
+%F	proj_id	fy_start_month_num	rsrc_self_add_flag	allow_complete_flag	rsrc_multi_assign_flag	checkout_flag	project_flag	step_complete_flag	cost_qty_recalc_flag	batch_sum_flag	name_sep_char	def_complete_pct_type	proj_short_name	acct_id	orig_proj_id	source_proj_id	base_type_id	clndr_id	sum_base_proj_id	task_code_base	task_code_step	priority_num	wbs_max_sum_level	strgy_priority_num	last_checksum	critical_drtn_hr_cnt	def_cost_per_qty	last_recalc_date	plan_start_date	plan_end_date	scd_end_date	add_date	last_tasksum_date	fcst_start_date	def_duration_type	task_code_prefix	guid	def_qty_type	add_by_name	web_local_root_path	proj_url	def_rate_type	add_act_remain_flag	act_this_per_link_flag	def_task_type	act_pct_link_flag	critical_path_type	task_code_prefix_flag	def_rollup_dates_flag	use_project_baseline_flag	rem_target_link_flag	reset_planned_flag	allow_neg_act_flag	sum_assign_level	last_fin_dates_id	last_baseline_update_date	cr_external_key	apply_actuals_date	fintmpl_id	matrix_id	last_level_date	last_schedule_date	px_last_update_date	px_priority	hist_interval	hist_level	control_updates_flag	px_enable_publication_flag	schedule_type	location_id	loaded_scope_level	export_flag	new_fin_dates_id	baselines_to_export	baseline_names_to_export	sync_wbs_heir_flag	sched_wbs_heir_type	wbs_heir_levels	next_data_date	close_period_flag	sum_refresh_date	trsrcsum_loaded	sumtask_loaded
+%R	11196	1	Y	Y	Y	N	Y	N	N	Y	.	CP_Drtn	MDL4D					22781		1000	10	10	2	500		0	0,0000	2023-07-23 08:00	2023-07-23 08:00		2024-04-12 16:00	2025-07-23 09:09			DT_FixedDUR2	C	AqG4nxesKEKFVcDRyaMUoA	QT_Hour	NigmatullinIZ			COST_PER_QTY	N	Y	TT_Task	Y	CT_TotFloat	Y	Y	Y	Y	N	N	SL_Taskrsrc					1					50	Month	HL_None	N	N			7	Y				N	WBS_Com	4					
+%T	ROLERATE
+%F	role_rate_id	role_id	cost_per_qty	cost_per_qty2	cost_per_qty3	cost_per_qty4	cost_per_qty5	start_date	max_qty_per_hr
+%R	746	1567						2020-03-18 14:08	1
+%T	CALENDAR
+%F	clndr_id	default_flag	clndr_name	proj_id	base_clndr_id	last_chng_date	clndr_type	day_hr_cnt	week_hr_cnt	month_hr_cnt	year_hr_cnt	rsrc_private	clndr_data
+%R	6205	N	7x24			2009-04-27 00:00	CA_Base	22	154	660	8030	N	(0||CalendarData()((0||DaysOfWeek()((0||1()((0||0(f|12:00|s|01:00)())(0||1(f|00:00|s|13:00)())))(0||2()((0||0(f|12:00|s|01:00)())(0||1(f|00:00|s|13:00)())))(0||3()((0||0(f|12:00|s|01:00)())(0||1(f|00:00|s|13:00)())))(0||4()((0||0(f|12:00|s|01:00)())(0||1(f|00:00|s|13:00)())))(0||5()((0||0(f|12:00|s|01:00)())(0||1(f|00:00|s|13:00)())))(0||6()((0||0(f|12:00|s|01:00)())(0||1(f|00:00|s|13:00)())))(0||7()((0||0(f|12:00|s|01:00)())(0||1(f|00:00|s|13:00)())))))(0||Exceptions()((0||0(d|41155)())(0||1(d|40910)())(0||2(d|40427)())(0||3(d|40536)())(0||4(d|40179)())(0||5(d|40903)())(0||6(d|40543)())(0||7(d|40791)())(0||8(d|41421)())(0||9(d|36992)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||10(d|36993)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||11(d|36994)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||12(d|36995)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||13(d|36996)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||14(d|41459)())(0||15(d|36997)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||16(d|36998)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||17(d|36999)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||18(d|37000)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||19(d|37001)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||20(d|37002)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||21(d|37003)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||22(d|37004)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||23(d|37005)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||24(d|41057)())(0||25(d|37006)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||26(d|40693)())(0||27(d|37007)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||28(d|37009)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||29(d|37008)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||30(d|37011)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||31(d|37010)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||32(d|41519)())(0||33(d|41633)())(0||34(d|40364)())(0||35(d|41094)())(0||36(d|41235)())(0||37(d|36990)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||38(d|36991)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||39(d|36988)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||40(d|36989)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||41(d|36986)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||42(d|36987)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||43(d|36984)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||44(d|36985)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||45(d|36982)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||46(d|36983)((0||0(f|12:00|s|8:00)())(0||1(f|17:00|s|13:00)())))(0||47(d|40728)())(0||48(d|41275)())(0||49(d|41606)())(0||50(d|40329)())(0||51(d|40871)())(0||52(d|40507)())(0||53(d|41268)())))(0||VIEW(ShowTotal|Y)())))
+%R	22389	N	W - Worker			2023-07-23 00:00	CA_Rsrc	8	40	172	2000	N	(0||CalendarData()(  (0||DaysOfWeek()(    (0||1()(      (0||0(s|08:00|f|16:00)())))    (0||2()(      (0||0(s|08:00|f|16:00)())))    (0||3()(      (0||0(s|08:00|f|16:00)())))    (0||4()(      (0||0(s|08:00|f|16:00)())))    (0||5()(      (0||0(s|08:00|f|16:00)())))    (0||6()(      (0||0(s|08:00|f|16:00)())))    (0||7()(      (0||0(s|08:00|f|16:00)())))))  (0||VIEW(ShowTotal|Y)())  (0||Exceptions()(    (0||0(d|40179)())    (0||1(d|40329)())    (0||2(d|40364)())    (0||3(d|40427)())    (0||4(d|40507)())    (0||5(d|40536)())    (0||6(d|40543)())    (0||7(d|40693)())    (0||8(d|40728)())    (0||9(d|40791)())    (0||10(d|40871)())    (0||11(d|40903)())    (0||12(d|40910)())    (0||13(d|41057)())    (0||14(d|41094)())    (0||15(d|41155)())    (0||16(d|41235)())    (0||17(d|41268)())    (0||18(d|41275)())    (0||19(d|41421)())    (0||20(d|41459)())    (0||21(d|41519)())    (0||22(d|41606)())    (0||23(d|41633)())))))
+%R	22781	N	CPLEX Model 14 - 7 day workweek	11196		2023-07-20 00:00	CA_Project	8	40	172	2000	N	(0||()(  (0||DaysOfWeek()(    (0||1()(      (0||0(s|08:00|f|16:00)())))    (0||2()(      (0||0(s|08:00|f|16:00)())))    (0||3()(      (0||0(s|08:00|f|16:00)())))    (0||4()(      (0||0(s|08:00|f|16:00)())))    (0||5()(      (0||0(s|08:00|f|16:00)())))    (0||6()(      (0||0(s|08:00|f|16:00)())))    (0||7()(      (0||0(s|08:00|f|16:00)())))))  (0||Exceptions()(    (0||0(d|40179)())    (0||1(d|40329)())    (0||2(d|40364)())    (0||3(d|40427)())    (0||4(d|40507)())    (0||5(d|40536)())    (0||6(d|40543)())    (0||7(d|40693)())    (0||8(d|40728)())    (0||9(d|40791)())    (0||10(d|40871)())    (0||11(d|40903)())    (0||12(d|40910)())    (0||13(d|41057)())    (0||14(d|41094)())    (0||15(d|41155)())    (0||16(d|41235)())    (0||17(d|41268)())    (0||18(d|41275)())    (0||19(d|41421)())    (0||20(d|41459)())    (0||21(d|41519)())    (0||22(d|41606)())    (0||23(d|41633)())))))
+%T	SCHEDOPTIONS
+%F	schedoptions_id	proj_id	sched_outer_depend_type	sched_open_critical_flag	sched_lag_early_start_flag	sched_retained_logic	sched_setplantoforecast	sched_float_type	sched_calendar_on_relationship_lag	sched_use_expect_end_flag	sched_progress_override	level_float_thrs_cnt	level_outer_assign_flag	level_outer_assign_priority	level_over_alloc_pct	level_within_float_flag	level_keep_sched_date_flag	level_all_rsrc_flag	sched_use_project_end_date_for_float	enable_multiple_longest_path_calc	limit_multiple_longest_path_calc	max_multiple_longest_path	use_total_float_multiple_longest_paths	key_activity_for_multiple_longest_paths	LevelPriorityList
+%R	1	11196	SD_Both	N	Y	Y	N	FT_FF	rcal_Predecessor	N	N	0	N	5	25	N	Y	N	Y	N	Y	10	Y		priority_type,ASC_BY_FIELD/ASC
+%T	PROJWBS
+%F	wbs_id	proj_id	obs_id	seq_num	est_wt	proj_node_flag	sum_data_flag	status_code	wbs_short_name	wbs_name	phase_id	parent_wbs_id	ev_user_pct	ev_etc_user_value	orig_cost	indep_remain_total_cost	ann_dscnt_rate_pct	dscnt_period_type	indep_remain_work_qty	anticip_start_date	anticip_end_date	ev_compute_type	ev_etc_compute_type	guid	tmpl_guid	plan_open_state
+%R	8524689	11196	540	308	1	Y	N	WS_Whatif	MDL4D	CPLEX Model 4 Resourse allocation and dates uploaded		7737543	6	0,88	0,0000	0,0000				2023-07-23 08:00		EC_Cmp_pct	EE_Rem_hr	c0Cfxx+HBkCXT+MgZClT6A		
+%R	8524690	11196	540	1	1	N	N	WS_Whatif	1	Milestones		8524689	6	0,88	0,0000	0,0000						EC_Cmp_pct	EE_Rem_hr	uVpmlw+f4k+gInrW/K4bvQ	XEiNGPbmFUehtXYhlJZ+8Q	
+%R	8524691	11196	540	3	1	N	N	WS_Whatif	H1	House 1		8524689	6	0,88	0,0000	0,0000						EC_Cmp_pct	EE_Rem_hr	DzQ4v+MniEuVnmjEvQCzDw	ZOTwv2pAaU+eH+iS7BBYdA	
+%R	8524692	11196	540	4	1	N	N	WS_Whatif	H2	House 2		8524689	6	0,88	0,0000	0,0000						EC_Cmp_pct	EE_Rem_hr	pIErSe0hZEq1dPi/5mXIzA	6HDC3/0EMEOZxDbcXmxHZA	
+%R	8524693	11196	540	5	1	N	N	WS_Whatif	H3	House 3		8524689	6	0,88	0,0000	0,0000						EC_Cmp_pct	EE_Rem_hr	EN8kZc0lhE+trvwU+8uwXQ	ZIc4g94DIE6qHspAxaeQfg	
+%R	8524694	11196	540	6	1	N	N	WS_Whatif	H4	House 4		8524689	6	0,88	0,0000	0,0000						EC_Cmp_pct	EE_Rem_hr	LjyUVK2ULkad/E7saVUsSw	/BJP3gr0QEWx5ibmGLMZgQ	
+%R	8524695	11196	540	7	1	N	N	WS_Whatif	H5	House 5		8524689	6	0,88	0,0000	0,0000						EC_Cmp_pct	EE_Rem_hr	PK4mKvEO+E2NJU31bFxGHQ	LhFVEgrGWkK+/QHcjUaFGQ	
+%T	RSRC
+%F	rsrc_id	parent_rsrc_id	clndr_id	role_id	shift_id	user_id	pobs_id	guid	rsrc_seq_num	email_addr	employee_code	office_phone	other_phone	rsrc_name	rsrc_short_name	rsrc_title_name	def_qty_per_hr	cost_qty_type	ot_factor	active_flag	auto_compute_act_flag	def_cost_qty_link_flag	ot_flag	curr_id	unit_id	rsrc_type	location_id	ts_approve_user_id	timesheet_flag	rsrc_notes	load_tasks_flag	level_flag	last_checksum
+%R	77630		6205					0XFEiES0YEG2o08OKpQB4w	220					MDL14 Resources	MDL4W		1	QT_Hour		Y	Y	Y	N	1		RT_Labor			N				
+%R	77631		6205					bxha1bGOz06VdGmdxPszTA	320					Expenses	MDL4E		1	QT_Hour	0	Y	Y	Y	N	1		RT_Mat			N				
+%R	77632	77630	22389					i9o6HDHxgEC0Si9Qjm37VA	3					Worker 3	W-3		1	QT_Hour		Y	Y	Y	N	1		RT_Labor			N				
+%R	77633	77630	22389					/U/xPEPTRUKsdlDq3kTmJQ	2					Worker 2	W-2		1	QT_Hour		Y	Y	Y	N	1		RT_Labor			N				
+%R	77634	77630	22389					OOXJr/sct0GN7Kij3HwT2w	1					Worker 1	W-1		1	QT_Hour		Y	Y	Y	N	1		RT_Labor			N				
+%R	77635	77631	6205					/hd7a2V9+EqNh263C7kpIg	0					Weekly Expenses	WE		0,36363636	QT_Hour		Y	Y	Y	N	1		RT_Equip			N				
+%T	RSRCRATE
+%F	rsrc_rate_id	rsrc_id	max_qty_per_hr	cost_per_qty	start_date	shift_period_id	cost_per_qty2	cost_per_qty3	cost_per_qty4	cost_per_qty5
+%R	10728	77630	1	0,0000	2023-01-01 00:00					
+%R	10729	77632	1	0,0000	2023-01-01 00:00					
+%R	10730	77633	1	0,0000	2023-01-01 00:00					
+%R	10731	77634	1	0,0000	2023-01-01 00:00					
+%R	10732	77631	1	0,0000	2023-01-01 00:00					
+%R	10733	77635	0,04545455	0,9699	2023-07-23 00:00		0,0000	0,0000	0,0000	0,0000
+%T	TASK
+%F	task_id	proj_id	wbs_id	clndr_id	phys_complete_pct	rev_fdbk_flag	est_wt	lock_plan_flag	auto_compute_act_flag	complete_pct_type	task_type	duration_type	status_code	task_code	task_name	rsrc_id	total_float_hr_cnt	free_float_hr_cnt	remain_drtn_hr_cnt	act_work_qty	remain_work_qty	target_work_qty	target_drtn_hr_cnt	target_equip_qty	act_equip_qty	remain_equip_qty	cstr_date	act_start_date	act_end_date	late_start_date	late_end_date	expect_end_date	early_start_date	early_end_date	restart_date	reend_date	target_start_date	target_end_date	rem_late_start_date	rem_late_end_date	cstr_type	priority_type	suspend_date	resume_date	float_path	float_path_order	guid	tmpl_guid	cstr_date2	cstr_type2	driving_path_flag	act_this_per_work_qty	act_this_per_equip_qty	external_early_start_date	external_late_end_date	cbs_id	pre_pess_start_date	pre_pess_finish_date	post_pess_start_date	post_pess_finish_date	create_date	update_date	create_user	update_user	location_id	control_updates_flag
+%R	24417362	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_Mile	DT_FixedDrtn	TK_NotStart	C0900	House 1 Start		1872	1872	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2023-08-23 08:00	2023-08-23 08:00	2023-08-23 08:00	2023-08-23 08:00	2023-08-23 08:00	2023-08-23 08:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					mdxmgrZMj0WgVlt3w5HXwA	hBBGnY9naEuKVcJzged5tg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417363	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2010	Masonry	77634	0	0	280	0	280	280	280	101,818182	0	101,818182	2023-07-23 08:00			2023-07-23 08:00	2023-08-26 16:00		2023-07-23 08:00	2023-08-26 16:00	2023-07-23 08:00	2023-08-26 16:00	2023-07-23 08:00	2023-08-26 16:00	2023-07-23 08:00	2023-08-26 16:00	CS_MSO	PT_Normal					zK5IT2AxrUGjIHf0L/OFHg	ve73LOJBmUKbnww7WqPa5A			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417364	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2020	Carpentry	77632	0	0	120	0	120	120	120	43,636364	0	43,636364	2023-08-27 08:00			2023-08-27 08:00	2023-09-10 16:00		2023-08-27 08:00	2023-09-10 16:00	2023-08-27 08:00	2023-09-10 16:00	2023-08-27 08:00	2023-09-10 16:00	2023-08-27 08:00	2023-09-10 16:00	CS_MSO	PT_Normal					DADqrT1f2U2Txk91EVmSBg	9se4BP/O1kmwzxwQVyXP8Q			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417365	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2030	Plumbing	77634	0	1280	320	0	320	320	320	116,363636	0	116,363636	2023-08-27 08:00			2023-08-27 08:00	2023-10-05 16:00		2023-08-27 08:00	2023-10-05 16:00	2023-08-27 08:00	2023-10-05 16:00	2023-08-27 08:00	2023-10-05 16:00	2023-08-27 08:00	2023-10-05 16:00	CS_MSO	PT_Normal					apMRdQ0Z9kiy07hnySVRGA	qklj8vkVtU+W1WtcbMadvA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417366	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2040	Ceiling	77632	0	128	120	0	120	120	120	43,636364	0	43,636364	2023-09-16 08:00			2023-09-16 08:00	2023-09-30 16:00		2023-09-16 08:00	2023-09-30 16:00	2023-09-16 08:00	2023-09-30 16:00	2023-09-16 08:00	2023-09-30 16:00	2023-09-16 08:00	2023-09-30 16:00	CS_MSO	PT_Normal					2YiKwMRIEUCBSF9PrWKI6g	KB4qOBoB+EuwGj0lmyiWnw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417367	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2050	Roofing	77632	0	1320	40	0	40	40	40	14,545455	0	14,545455	2023-09-11 08:00			2023-09-11 08:00	2023-09-15 16:00		2023-09-11 08:00	2023-09-15 16:00	2023-09-11 08:00	2023-09-15 16:00	2023-09-11 08:00	2023-09-15 16:00	2023-09-11 08:00	2023-09-15 16:00	CS_MSO	PT_Normal					nSqhKI2SSkuLteVQWPEjIw	IDvGfYeip0qnfh5GUfgOHA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417368	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2060	Painting	77633	0	1280	80	0	80	80	80	29,090909	0	29,090909	2023-10-17 08:00			2023-10-17 08:00	2023-10-26 16:00		2023-10-17 08:00	2023-10-26 16:00	2023-10-17 08:00	2023-10-26 16:00	2023-10-17 08:00	2023-10-26 16:00	2023-10-17 08:00	2023-10-26 16:00	CS_MSO	PT_Normal					FpwM6DORDUSK4F+WzpYO3g	9s6PsLhnaEWdV4wLJTdUkA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417369	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2070	Windows	77634	0	248	40	0	40	40	40	14,545455	0	14,545455	2024-02-28 08:00			2024-02-28 08:00	2024-03-03 16:00		2024-02-28 08:00	2024-03-03 16:00	2024-02-28 08:00	2024-03-03 16:00	2024-02-28 08:00	2024-03-03 16:00	2024-02-28 08:00	2024-03-03 16:00	CS_MSO	PT_Normal					w3bZHxrx1UqUphvuFj0eKA	DwKqfTXTEUWULfzFAL922A			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417370	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2080	Facade	77633	0	40	80	0	80	80	80	29,090909	0	29,090909	2024-03-20 08:00			2024-03-20 08:00	2024-03-29 16:00		2024-03-20 08:00	2024-03-29 16:00	2024-03-20 08:00	2024-03-29 16:00	2024-03-20 08:00	2024-03-29 16:00	2024-03-20 08:00	2024-03-29 16:00	CS_MSO	PT_Normal					5FQTw4jR80qurZf7pcStZQ	oEtmRbldUkCUNqqRMck/6g			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417371	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C2090	Garden	77634	0	128	40	0	40	40	40	14,545455	0	14,545455	2024-03-14 08:00			2024-03-14 08:00	2024-03-18 16:00		2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	CS_MSO	PT_Normal					vdEqO51GFEiUcn5pTPB5EA	G/Wk2AjFEEa9D85zcRHCwg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417372	11196	8524692	22781	0	N	1	N	N	CP_Drtn	TT_Rsrc	DT_FixedDrtn	TK_NotStart	C2100	Moving	77633	0	0	40	0	40	40	40	34,545455	0	34,545455	2024-04-04 08:00			2024-04-04 08:00	2024-04-08 16:00		2024-04-04 08:00	2024-04-08 16:00	2024-04-04 08:00	2024-04-08 16:00	2024-04-04 08:00	2024-04-08 16:00	2024-04-04 08:00	2024-04-08 16:00	CS_MSO	PT_Normal					6cQeRFIMg06OMENGCZfdLA	77pYKoioHkWYpl6GmsthjQ			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417373	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_Mile	DT_FixedDrtn	TK_NotStart	C2000	House 2 Start		2120	2120	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					xHwMWOm3Ek2irtF0LCvtdg	yyjOYEQM2UCYQEQTxBqVzA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417374	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3010	Masonry	77633	0	0	280	0	280	280	280	101,818182	0	101,818182	2023-10-27 08:00			2023-10-27 08:00	2023-11-30 16:00		2023-10-27 08:00	2023-11-30 16:00	2023-10-27 08:00	2023-11-30 16:00	2023-10-27 08:00	2023-11-30 16:00	2023-10-27 08:00	2023-11-30 16:00	CS_MSO	PT_Normal					w6pzpoWly0KrvZVuauItHg	JJl2e+s0H0GYAaAPMz5I1A			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417375	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3020	Carpentry	77633	0	0	120	0	120	120	120	43,636364	0	43,636364	2023-12-01 08:00			2023-12-01 08:00	2023-12-15 16:00		2023-12-01 08:00	2023-12-15 16:00	2023-12-01 08:00	2023-12-15 16:00	2023-12-01 08:00	2023-12-15 16:00	2023-12-01 08:00	2023-12-15 16:00	CS_MSO	PT_Normal					OF3UB0vezke5z4xksiKN9A	eTQ2FciUbkajUQNuHbzKjA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417376	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3030	Plumbing	77634	0	368	320	0	320	320	320	116,363636	0	116,363636	2023-12-10 08:00			2023-12-10 08:00	2024-01-18 16:00		2023-12-10 08:00	2024-01-18 16:00	2023-12-10 08:00	2024-01-18 16:00	2023-12-10 08:00	2024-01-18 16:00	2023-12-10 08:00	2024-01-18 16:00	CS_MSO	PT_Normal					uFOICAhBtUua99ElBx5GLA	lLvq/ZoVvUy/G7hG6eIYbg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417377	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3040	Ceiling	77633	0	432	120	0	120	120	120	43,636364	0	43,636364	2023-12-21 08:00			2023-12-21 08:00	2024-01-04 16:00		2023-12-21 08:00	2024-01-04 16:00	2023-12-21 08:00	2024-01-04 16:00	2023-12-21 08:00	2024-01-04 16:00	2023-12-21 08:00	2024-01-04 16:00	CS_MSO	PT_Normal					PDblkRQiREGDlIgjQxJL1Q	3SWqOTqSvkyZW/cdK39evA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417378	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3050	Roofing	77633	0	512	40	0	40	40	40	14,545455	0	14,545455	2023-12-16 08:00			2023-12-16 08:00	2023-12-20 16:00		2023-12-16 08:00	2023-12-20 16:00	2023-12-16 08:00	2023-12-20 16:00	2023-12-16 08:00	2023-12-20 16:00	2023-12-16 08:00	2023-12-20 16:00	CS_MSO	PT_Normal					KVFlUNl62kmIhWMSXLFNEw	/p6pdYnHXk29shiy/BPiYw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417379	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3060	Painting	77632	0	200	80	0	80	80	80	29,090909	0	29,090909	2024-02-28 08:00			2024-02-28 08:00	2024-03-08 16:00		2024-02-28 08:00	2024-03-08 16:00	2024-02-28 08:00	2024-03-08 16:00	2024-02-28 08:00	2024-03-08 16:00	2024-02-28 08:00	2024-03-08 16:00	CS_MSO	PT_Normal					shFOlPE/Rki/vXrHd7kUtg	75gidpW7/US2DPdkF8Ch9A			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417380	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3070	Windows	77632	0	280	40	0	40	40	40	14,545455	0	14,545455	2024-02-23 08:00			2024-02-23 08:00	2024-02-27 16:00		2024-02-23 08:00	2024-02-27 16:00	2024-02-23 08:00	2024-02-27 16:00	2024-02-23 08:00	2024-02-27 16:00	2024-02-23 08:00	2024-02-27 16:00	CS_MSO	PT_Normal					CeDWigqyj06xsQugLI/ANw	u8DjBgqosk6Xy8H4PI0+Sw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417381	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3080	Facade	77633	0	152	80	0	80	80	80	29,090909	0	29,090909	2024-03-05 08:00			2024-03-05 08:00	2024-03-14 16:00		2024-03-05 08:00	2024-03-14 16:00	2024-03-05 08:00	2024-03-14 16:00	2024-03-05 08:00	2024-03-14 16:00	2024-03-05 08:00	2024-03-14 16:00	CS_MSO	PT_Normal					wMIWFfEEb0WyeScPP7+vJQ	g/i1sOyZzUaNyHu2mTrdjQ			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417382	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C3090	Garden	77634	0	0	40	0	40	40	40	14,545455	0	14,545455	2024-03-29 08:00			2024-03-29 08:00	2024-04-02 16:00		2024-03-29 08:00	2024-04-02 16:00	2024-03-29 08:00	2024-04-02 16:00	2024-03-29 08:00	2024-04-02 16:00	2024-03-29 08:00	2024-04-02 16:00	CS_MSO	PT_Normal					fQKggzoqm0iTcrSjx9g7MA	KeBB3riawUStwxAdwTeRSg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417383	11196	8524693	22781	0	N	1	N	N	CP_Drtn	TT_Rsrc	DT_FixedDrtn	TK_NotStart	C3100	Moving	77634	0	0	40	0	40	40	40	34,545455	0	34,545455	2024-04-03 08:00			2024-04-03 08:00	2024-04-07 16:00		2024-04-03 08:00	2024-04-07 16:00	2024-04-03 08:00	2024-04-07 16:00	2024-04-03 08:00	2024-04-07 16:00	2024-04-03 08:00	2024-04-07 16:00	CS_MSO	PT_Normal					Kep1PHHIfkqDLU7rrxV5XQ	Is35ZxBxOEmem1r2rsCTZA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417384	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_Mile	DT_FixedDrtn	TK_NotStart	C3000	House 3 Start		1352	1352	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2023-10-27 08:00	2023-10-27 08:00	2023-10-27 08:00	2023-10-27 08:00	2023-10-27 08:00	2023-10-27 08:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					s2uZSlRCUkOvvaTz2nc4HA	0HTXQiwFpUanhRYjZnyQgA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417385	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4010	Masonry	77632	0	0	280	0	280	280	280	101,818182	0	101,818182	2023-11-20 08:00			2023-11-20 08:00	2023-12-24 16:00		2023-11-20 08:00	2023-12-24 16:00	2023-11-20 08:00	2023-12-24 16:00	2023-11-20 08:00	2023-12-24 16:00	2023-11-20 08:00	2023-12-24 16:00	CS_MSO	PT_Normal					dlDGLC/wUkShurZsosGxMw	ZRnrZK5LrEe/Fs4JS1eDTQ			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417386	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4020	Carpentry	77632	0	0	120	0	120	120	120	43,636364	0	43,636364	2023-12-25 08:00			2023-12-25 08:00	2024-01-08 16:00		2023-12-25 08:00	2024-01-08 16:00	2023-12-25 08:00	2024-01-08 16:00	2023-12-25 08:00	2024-01-08 16:00	2023-12-25 08:00	2024-01-08 16:00	CS_MSO	PT_Normal					rCBVRhQbpkKFSc6yD0MTCg	jQbntDd9/UKlS9XJCVr2lg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417387	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4030	Plumbing	77634	0	80	320	0	320	320	320	116,363636	0	116,363636	2024-01-19 08:00			2024-01-19 08:00	2024-02-27 16:00		2024-01-19 08:00	2024-02-27 16:00	2024-01-19 08:00	2024-02-27 16:00	2024-01-19 08:00	2024-02-27 16:00	2024-01-19 08:00	2024-02-27 16:00	CS_MSO	PT_Normal					CcZqEHjY806vrX8X98ndHw	/+RTzn0D8Um3zmgniLiwSg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417388	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4040	Ceiling	77632	0	160	120	0	120	120	120	43,636364	0	43,636364	2024-01-29 08:00			2024-01-29 08:00	2024-02-12 16:00		2024-01-29 08:00	2024-02-12 16:00	2024-01-29 08:00	2024-02-12 16:00	2024-01-29 08:00	2024-02-12 16:00	2024-01-29 08:00	2024-02-12 16:00	CS_MSO	PT_Normal					PC4LYZB58ki7wKNz+jn3uQ	wKfOGiQ5e06GXsFouNJJxg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417389	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4050	Roofing	77632	0	368	40	0	40	40	40	14,545455	0	14,545455	2024-01-09 08:00			2024-01-09 08:00	2024-01-13 16:00		2024-01-09 08:00	2024-01-13 16:00	2024-01-09 08:00	2024-01-13 16:00	2024-01-09 08:00	2024-01-13 16:00	2024-01-09 08:00	2024-01-13 16:00	CS_MSO	PT_Normal					q3RmL+SWHkyZyMM8WflmqA	Jvp0uQwPcUy7O0Ne8sJAfQ			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417390	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4060	Painting	77634	0	128	80	0	80	80	80	29,090909	0	29,090909	2024-03-04 08:00			2024-03-04 08:00	2024-03-13 16:00		2024-03-04 08:00	2024-03-13 16:00	2024-03-04 08:00	2024-03-13 16:00	2024-03-04 08:00	2024-03-13 16:00	2024-03-04 08:00	2024-03-13 16:00	CS_MSO	PT_Normal					qlM1svIybkuNYaGxJpMceg	I7fQF/yd/UGHOAhAbaZK7Q			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417391	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4070	Windows	77633	0	200	40	0	40	40	40	14,545455	0	14,545455	2024-02-29 08:00			2024-02-29 08:00	2024-03-04 16:00		2024-02-29 08:00	2024-03-04 16:00	2024-02-29 08:00	2024-03-04 16:00	2024-02-29 08:00	2024-03-04 16:00	2024-02-29 08:00	2024-03-04 16:00	CS_MSO	PT_Normal					mrtQmoBGrk+pxV19Muy5tQ	UVJAq7z7pE20cpytJx2z/Q			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417392	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4080	Facade	77632	0	8	80	0	80	80	80	29,090909	0	29,090909	2024-03-19 08:00			2024-03-19 08:00	2024-03-28 16:00		2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	CS_MSO	PT_Normal					b8eUmgTOw068/njHfBaD2w	o+M4YKLxC0WPYfuqrm+/5g			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417393	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C4090	Garden	77632	0	128	40	0	40	40	40	14,545455	0	14,545455	2024-03-09 08:00			2024-03-09 08:00	2024-03-13 16:00		2024-03-09 08:00	2024-03-13 16:00	2024-03-09 08:00	2024-03-13 16:00	2024-03-09 08:00	2024-03-13 16:00	2024-03-09 08:00	2024-03-13 16:00	CS_MSO	PT_Normal					mFJj3FzwNUyXJvubayNm3g	8s1gRrVltEmYxn5gvlWuXg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417394	11196	8524694	22781	0	N	1	N	N	CP_Drtn	TT_Rsrc	DT_FixedDrtn	TK_NotStart	C4100	Moving	77633	0	0	40	0	40	40	40	34,545455	0	34,545455	2024-03-30 08:00			2024-03-30 08:00	2024-04-03 16:00		2024-03-30 08:00	2024-04-03 16:00	2024-03-30 08:00	2024-04-03 16:00	2024-03-30 08:00	2024-04-03 16:00	2024-03-30 08:00	2024-04-03 16:00	CS_MSO	PT_Normal					c9RH/hrWtUqjUWh7fVVdHA	aIA9DnQe70mV4Vj2JJeM9w			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417395	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_Mile	DT_FixedDrtn	TK_NotStart	C4000	House 4 Start		1160	1160	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2023-11-20 08:00	2023-11-20 08:00	2023-11-20 08:00	2023-11-20 08:00	2023-11-20 08:00	2023-11-20 08:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					UUurMeXijE+AyireazGzXA	g24zyc3j4Eu44aAk+ZWv4w			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417396	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5010	Masonry	77634	0	0	280	0	280	280	280	101,818182	0	101,818182	2023-10-21 08:00			2023-10-21 08:00	2023-11-24 16:00		2023-10-21 08:00	2023-11-24 16:00	2023-10-21 08:00	2023-11-24 16:00	2023-10-21 08:00	2023-11-24 16:00	2023-10-21 08:00	2023-11-24 16:00	CS_MSO	PT_Normal					8XZ6evpLyEC7AsV69kN5nA	0sQmwatJy0e1QoGGFTiEIw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417397	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5020	Carpentry	77634	0	520	120	0	120	120	120	43,636364	0	43,636364	2023-11-25 08:00			2023-11-25 08:00	2023-12-09 16:00		2023-11-25 08:00	2023-12-09 16:00	2023-11-25 08:00	2023-12-09 16:00	2023-11-25 08:00	2023-12-09 16:00	2023-11-25 08:00	2023-12-09 16:00	CS_MSO	PT_Normal					G1VQ/LYuqE+UvrMntPiSwg	HBl+oocoeEGGIJSyJVeSZA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417398	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5030	Plumbing	77633	0	240	320	0	320	320	320	116,363636	0	116,363636	2024-01-05 08:00			2024-01-05 08:00	2024-02-13 16:00		2024-01-05 08:00	2024-02-13 16:00	2024-01-05 08:00	2024-02-13 16:00	2024-01-05 08:00	2024-02-13 16:00	2024-01-05 08:00	2024-02-13 16:00	CS_MSO	PT_Normal					guwgUZhj5kSPcd6+qv0WxA	i0G6tH5kdkGKryV1VmmEAQ			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417399	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5040	Ceiling	77632	0	128	120	0	120	120	120	43,636364	0	43,636364	2024-01-14 08:00			2024-01-14 08:00	2024-01-28 16:00		2024-01-14 08:00	2024-01-28 16:00	2024-01-14 08:00	2024-01-28 16:00	2024-01-14 08:00	2024-01-28 16:00	2024-01-14 08:00	2024-01-28 16:00	CS_MSO	PT_Normal					2hQ9JbCTN0y+OS+3g4RtZw	T3eNVx88E0W9oODP3JWBsA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417400	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5050	Roofing	77632	0	200	40	0	40	40	40	14,545455	0	14,545455	2024-02-13 08:00			2024-02-13 08:00	2024-02-17 16:00		2024-02-13 08:00	2024-02-17 16:00	2024-02-13 08:00	2024-02-17 16:00	2024-02-13 08:00	2024-02-17 16:00	2024-02-13 08:00	2024-02-17 16:00	CS_MSO	PT_Normal					REqm3u/DwUOgSB+0B1nkeA	woUwL/XG2Eev7ZAOttRUJA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417401	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5060	Painting	77633	0	352	80	0	80	80	80	29,090909	0	29,090909	2024-02-14 08:00			2024-02-14 08:00	2024-02-23 16:00		2024-02-14 08:00	2024-02-23 16:00	2024-02-14 08:00	2024-02-23 16:00	2024-02-14 08:00	2024-02-23 16:00	2024-02-14 08:00	2024-02-23 16:00	CS_MSO	PT_Normal					0xgEjkb/XEGIw0j0cK1svQ	Oen/hArEakKguCXWfJbrXQ			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417402	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5070	Windows	77632	0	160	40	0	40	40	40	14,545455	0	14,545455	2024-03-14 08:00			2024-03-14 08:00	2024-03-18 16:00		2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	CS_MSO	PT_Normal					bIM01UF5g0WeYB0f8wcgOg	osAB5cM48EKxr9PZpjtq7Q			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417403	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5080	Facade	77632	0	0	80	0	80	80	80	29,090909	0	29,090909	2024-03-29 08:00			2024-03-29 08:00	2024-04-07 16:00		2024-03-29 08:00	2024-04-07 16:00	2024-03-29 08:00	2024-04-07 16:00	2024-03-29 08:00	2024-04-07 16:00	2024-03-29 08:00	2024-04-07 16:00	CS_MSO	PT_Normal					8VTPuebEpkSm0ZCmeMwQGw	yLNjgWeigEOappUxhvYkCA			Y	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417404	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C5090	Garden	77633	0	152	40	0	40	40	40	14,545455	0	14,545455	2024-03-15 08:00			2024-03-15 08:00	2024-03-19 16:00		2024-03-15 08:00	2024-03-19 16:00	2024-03-15 08:00	2024-03-19 16:00	2024-03-15 08:00	2024-03-19 16:00	2024-03-15 08:00	2024-03-19 16:00	CS_MSO	PT_Normal					jEbbRK1zX0OucDIxxhDsRw	RMrJzZ/b9UyLh2Yh0mselA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417405	11196	8524695	22781	0	N	1	N	N	CP_Drtn	TT_Rsrc	DT_FixedDrtn	TK_NotStart	C5100	Moving	77632	0	0	40	0	40	40	40	34,545455	0	34,545455	2024-04-08 08:00			2024-04-08 08:00	2024-04-12 16:00		2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	CS_MSO	PT_Normal					26TZI8TI7k+6bEEM6CWrtw	GwyK7oerEUagPhhV3rRAGw			Y	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417406	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_Mile	DT_FixedDrtn	TK_NotStart	C5000	House 5 Start		1400	1400	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2023-10-21 08:00	2023-10-21 08:00	2023-10-21 08:00	2023-10-21 08:00	2023-10-21 08:00	2023-10-21 08:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					cnq9DC+KJE2u2qA5/9hS+Q	w48SDHIyTEmWgSE+11VvFQ			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417407	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_FinMile	DT_FixedDrtn	TK_NotStart	C4110	House 4 Finish		72	72	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2024-04-03 16:00	2024-04-03 16:00	2024-04-03 16:00	2024-04-03 16:00	2024-04-03 16:00	2024-04-03 16:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					fS8p8/yMnk+w2pmbCl7h6A	J6yNKlP8a0CQEl5ufQan1w			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417408	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_FinMile	DT_FixedDrtn	TK_NotStart	C1100	House 1 Finish		0	0	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					KFL4iNk8zUKC4fuCaVzRIQ	eLlHyHmKK0+qHro7yAxRNQ			Y	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417409	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_FinMile	DT_FixedDrtn	TK_NotStart	C2110	House 2 Finish		32	32	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2024-04-08 16:00	2024-04-08 16:00	2024-04-08 16:00	2024-04-08 16:00	2024-04-08 16:00	2024-04-08 16:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					nmrLiFOH1UWg6Yj3ET0LJQ	kKK/XirrX0yK0wxBi6mrTg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417410	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_FinMile	DT_FixedDrtn	TK_NotStart	C3110	House 3 Finish		40	40	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2024-04-07 16:00	2024-04-07 16:00	2024-04-07 16:00	2024-04-07 16:00	2024-04-07 16:00	2024-04-07 16:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					MdvkZXrcKkyTpQAImW1Qrw	crma0cvd/kOyIyB2lrzfcw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417411	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_FinMile	DT_FixedDrtn	TK_NotStart	C5110	House 5 Finish		0	0	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					MCJucRyqyEybRkiOTNGLOg	oMoEHbyds0Gt1TLZF76bMA			Y	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417412	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_Mile	DT_FixedDrtn	TK_NotStart	C0810	Project Begin		0	0	0	0	0	0	0	0	0	0				2023-07-23 08:00	2023-07-23 08:00		2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00	2023-07-23 08:00		PT_Normal					+Clr+JxEkkq2nHmpkU8cMQ	2sltbc1lK0W3eKD+mwi3Yw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417413	11196	8524690	22781	0	N	1	N	N	CP_Drtn	TT_FinMile	DT_FixedDrtn	TK_NotStart	C6010	Project Finish		0	0	0	0	0	0	0	0	0	0				2024-04-12 16:00	2024-04-12 16:00		2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00	2024-04-12 16:00		PT_Normal					DkfwdUg1OUugja9iBaQklg	McMEFWy+2kWDPRT+uIMROw			Y	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417414	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1010	Carpentry	77633	0	0	120	0	120	120	120	43,636364	0	43,636364	2023-09-27 08:00			2023-09-27 08:00	2023-10-11 16:00		2023-09-27 08:00	2023-10-11 16:00	2023-09-27 08:00	2023-10-11 16:00	2023-09-27 08:00	2023-10-11 16:00	2023-09-27 08:00	2023-10-11 16:00	CS_MSO	PT_Normal					Iv34gqXvgUKrCZ9V9oiB7w	2OWa+OdFUU+opUO1M3gOqw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417415	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1020	Plumbing	77632	0	0	320	0	320	320	320	116,363636	0	116,363636	2023-10-01 08:00			2023-10-01 08:00	2023-11-09 16:00		2023-10-01 08:00	2023-11-09 16:00	2023-10-01 08:00	2023-11-09 16:00	2023-10-01 08:00	2023-11-09 16:00	2023-10-01 08:00	2023-11-09 16:00	CS_MSO	PT_Normal					tSEDXdLZU06wQQatfcdRVw	P8d3m8rB20WfDlM2LVVHlw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417416	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1030	Ceiling	77634	0	1200	120	0	120	120	120	43,636364	0	43,636364	2023-10-06 08:00			2023-10-06 08:00	2023-10-20 16:00		2023-10-06 08:00	2023-10-20 16:00	2023-10-06 08:00	2023-10-20 16:00	2023-10-06 08:00	2023-10-20 16:00	2023-10-06 08:00	2023-10-20 16:00	CS_MSO	PT_Normal					gyKS/uImVUq0xL6t95WksQ	DRb+bRsCXUi0fiaciMtAJg			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417417	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1040	Roofing	77633	0	192	40	0	40	40	40	14,545455	0	14,545455	2023-10-12 08:00			2023-10-12 08:00	2023-10-16 16:00		2023-10-12 08:00	2023-10-16 16:00	2023-10-12 08:00	2023-10-16 16:00	2023-10-12 08:00	2023-10-16 16:00	2023-10-12 08:00	2023-10-16 16:00	CS_MSO	PT_Normal					KIG4npCynEarsdQwObMTaw	2elxVkBQVUWwvnmjVKBbeQ			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417418	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1050	Painting	77634	0	80	80	0	80	80	80	29,090909	0	29,090909	2024-03-19 08:00			2024-03-19 08:00	2024-03-28 16:00		2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	CS_MSO	PT_Normal					os85fynT8kiUm5nfqMxqOg	iOwFa3qxIk6wQxRzQQlsrA			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417419	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1060	Windows	77632	0	360	40	0	40	40	40	14,545455	0	14,545455	2024-02-18 08:00			2024-02-18 08:00	2024-02-22 16:00		2024-02-18 08:00	2024-02-22 16:00	2024-02-18 08:00	2024-02-22 16:00	2024-02-18 08:00	2024-02-22 16:00	2024-02-18 08:00	2024-02-22 16:00	CS_MSO	PT_Normal					oEQysE6Tuki2H51uJVvSKQ	P2rAAEyl/EuJVQUuJ2Pydw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417420	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1070	Facade	77632	0	1120	80	0	80	80	80	29,090909	0	29,090909	2023-11-10 08:00			2023-11-10 08:00	2023-11-19 16:00		2023-11-10 08:00	2023-11-19 16:00	2023-11-10 08:00	2023-11-19 16:00	2023-11-10 08:00	2023-11-19 16:00	2023-11-10 08:00	2023-11-19 16:00	CS_MSO	PT_Normal					GsCsAn58902E6itH6Xs+1g	9zypLO6HEEWZ5c4wWBaXzw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417421	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1080	Garden	77633	0	312	40	0	40	40	40	14,545455	0	14,545455	2024-02-24 08:00			2024-02-24 08:00	2024-02-28 16:00		2024-02-24 08:00	2024-02-28 16:00	2024-02-24 08:00	2024-02-28 16:00	2024-02-24 08:00	2024-02-28 16:00	2024-02-24 08:00	2024-02-28 16:00	CS_MSO	PT_Normal					fwb7NpFV20+D8rf9owqrSA	OhHg0PfxBU6vyH801klGXw			N	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417422	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1090	Moving	77634	0	0	40	0	40	40	40	14,545455	0	14,545455	2024-04-08 08:00			2024-04-08 08:00	2024-04-12 16:00		2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	CS_MSO	PT_Normal					VsT+hoA2Qk2+ndqJK6lDHQ	0AdxJn9u4UiSw7sWQbq6FA			Y	0	0								2025-07-23 09:09	2025-07-23 09:09	NigmatullinIZ	NigmatullinIZ		N
+%R	24417423	11196	8524691	22781	0	N	1	N	N	CP_Drtn	TT_Task	DT_FixedDUR2	TK_NotStart	C1000	Masonry	77633	0	0	280	0	280	280	280	101,818182	0	101,818182	2023-08-23 08:00			2023-08-23 08:00	2023-09-26 16:00		2023-08-23 08:00	2023-09-26 16:00	2023-08-23 08:00	2023-09-26 16:00	2023-08-23 08:00	2023-09-26 16:00	2023-08-23 08:00	2023-09-26 16:00	CS_MSO	PT_Normal					Qcly5JmnqkK1iQ1xGMYdEA	64a9QnQX0E6C5xWWnKxQTA			N	0	0								2025-07-23 09:09	2025-11-21 17:53	NigmatullinIZ	NigmatullinIZ		N
+%T	TASKNOTE
+%F	task_id	proj_id	task_notes
+%R	24417423	11196	<html><head><META content=""text/html; charset=unicode"" http-equiv=Content-Type></head><body><div>21.11.2025 : NigmatullinIZ</div><div>Workerk 1</div><br></body></html>
+%T	TASKPRED
+%F	task_pred_id	task_id	pred_task_id	proj_id	pred_proj_id	pred_type	lag_hr_cnt	comments	float_path	aref	arls
+%R	51853016	24417364	24417363	11196	11196	PR_FS	0			2023-08-26 16:00	2023-08-27 08:00
+%R	51853017	24417365	24417363	11196	11196	PR_FS	0			2023-08-26 16:00	2023-08-27 08:00
+%R	51853018	24417366	24417363	11196	11196	PR_FS	0			2023-08-26 16:00	2023-09-16 08:00
+%R	51853019	24417367	24417364	11196	11196	PR_FS	0			2023-09-10 16:00	2023-09-11 08:00
+%R	51853020	24417368	24417366	11196	11196	PR_FS	0			2023-09-30 16:00	2023-10-17 08:00
+%R	51853021	24417369	24417367	11196	11196	PR_FS	0			2023-09-15 16:00	2024-02-28 08:00
+%R	51853022	24417370	24417367	11196	11196	PR_FS	0			2023-09-15 16:00	2024-03-20 08:00
+%R	51853023	24417370	24417365	11196	11196	PR_FS	0			2023-10-05 16:00	2024-03-20 08:00
+%R	51853024	24417371	24417367	11196	11196	PR_FS	0			2023-09-15 16:00	2024-03-14 08:00
+%R	51853025	24417371	24417365	11196	11196	PR_FS	0			2023-10-05 16:00	2024-03-14 08:00
+%R	51853026	24417372	24417369	11196	11196	PR_FS	0			2024-03-03 16:00	2024-04-04 08:00
+%R	51853027	24417372	24417370	11196	11196	PR_FS	0			2024-03-29 16:00	2024-04-04 08:00
+%R	51853028	24417372	24417371	11196	11196	PR_FS	0			2024-03-18 16:00	2024-04-04 08:00
+%R	51853029	24417372	24417368	11196	11196	PR_FS	0			2023-10-26 16:00	2024-04-04 08:00
+%R	51853030	24417375	24417374	11196	11196	PR_FS	0			2023-11-30 16:00	2023-12-01 08:00
+%R	51853031	24417376	24417374	11196	11196	PR_FS	0			2023-11-30 16:00	2023-12-10 08:00
+%R	51853032	24417377	24417374	11196	11196	PR_FS	0			2023-11-30 16:00	2023-12-21 08:00
+%R	51853033	24417378	24417375	11196	11196	PR_FS	0			2023-12-15 16:00	2023-12-16 08:00
+%R	51853034	24417379	24417377	11196	11196	PR_FS	0			2024-01-04 16:00	2024-02-28 08:00
+%R	51853035	24417380	24417378	11196	11196	PR_FS	0			2023-12-20 16:00	2024-02-23 08:00
+%R	51853036	24417381	24417378	11196	11196	PR_FS	0			2023-12-20 16:00	2024-03-05 08:00
+%R	51853037	24417381	24417376	11196	11196	PR_FS	0			2024-01-18 16:00	2024-03-05 08:00
+%R	51853038	24417382	24417378	11196	11196	PR_FS	0			2023-12-20 16:00	2024-03-29 08:00
+%R	51853039	24417382	24417376	11196	11196	PR_FS	0			2024-01-18 16:00	2024-03-29 08:00
+%R	51853040	24417383	24417380	11196	11196	PR_FS	0			2024-02-27 16:00	2024-04-03 08:00
+%R	51853041	24417383	24417381	11196	11196	PR_FS	0			2024-03-14 16:00	2024-04-03 08:00
+%R	51853042	24417383	24417382	11196	11196	PR_FS	0			2024-04-02 16:00	2024-04-03 08:00
+%R	51853043	24417383	24417379	11196	11196	PR_FS	0			2024-03-08 16:00	2024-04-03 08:00
+%R	51853044	24417386	24417385	11196	11196	PR_FS	0			2023-12-24 16:00	2023-12-25 08:00
+%R	51853045	24417387	24417385	11196	11196	PR_FS	0			2023-12-24 16:00	2024-01-19 08:00
+%R	51853046	24417388	24417385	11196	11196	PR_FS	0			2023-12-24 16:00	2024-01-29 08:00
+%R	51853047	24417389	24417386	11196	11196	PR_FS	0			2024-01-08 16:00	2024-01-09 08:00
+%R	51853048	24417390	24417388	11196	11196	PR_FS	0			2024-02-12 16:00	2024-03-04 08:00
+%R	51853049	24417391	24417389	11196	11196	PR_FS	0			2024-01-13 16:00	2024-02-29 08:00
+%R	51853050	24417392	24417389	11196	11196	PR_FS	0			2024-01-13 16:00	2024-03-19 08:00
+%R	51853051	24417392	24417387	11196	11196	PR_FS	0			2024-02-27 16:00	2024-03-19 08:00
+%R	51853052	24417393	24417389	11196	11196	PR_FS	0			2024-01-13 16:00	2024-03-09 08:00
+%R	51853053	24417393	24417387	11196	11196	PR_FS	0			2024-02-27 16:00	2024-03-09 08:00
+%R	51853054	24417394	24417391	11196	11196	PR_FS	0			2024-03-04 16:00	2024-03-30 08:00
+%R	51853055	24417394	24417392	11196	11196	PR_FS	0			2024-03-28 16:00	2024-03-30 08:00
+%R	51853056	24417394	24417393	11196	11196	PR_FS	0			2024-03-13 16:00	2024-03-30 08:00
+%R	51853057	24417394	24417390	11196	11196	PR_FS	0			2024-03-13 16:00	2024-03-30 08:00
+%R	51853058	24417397	24417396	11196	11196	PR_FS	0			2023-11-24 16:00	2023-11-25 08:00
+%R	51853059	24417398	24417396	11196	11196	PR_FS	0			2023-11-24 16:00	2024-01-05 08:00
+%R	51853060	24417399	24417396	11196	11196	PR_FS	0			2023-11-24 16:00	2024-01-14 08:00
+%R	51853061	24417400	24417397	11196	11196	PR_FS	0			2023-12-09 16:00	2024-02-13 08:00
+%R	51853062	24417401	24417399	11196	11196	PR_FS	0			2024-01-28 16:00	2024-02-14 08:00
+%R	51853063	24417402	24417400	11196	11196	PR_FS	0			2024-02-17 16:00	2024-03-14 08:00
+%R	51853064	24417403	24417400	11196	11196	PR_FS	0			2024-02-17 16:00	2024-03-29 08:00
+%R	51853065	24417403	24417398	11196	11196	PR_FS	0			2024-02-13 16:00	2024-03-29 08:00
+%R	51853066	24417404	24417400	11196	11196	PR_FS	0			2024-02-17 16:00	2024-03-15 08:00
+%R	51853067	24417404	24417398	11196	11196	PR_FS	0			2024-02-13 16:00	2024-03-15 08:00
+%R	51853068	24417405	24417402	11196	11196	PR_FS	0			2024-03-18 16:00	2024-04-08 08:00
+%R	51853069	24417405	24417403	11196	11196	PR_FS	0			2024-04-07 16:00	2024-04-08 08:00
+%R	51853070	24417405	24417404	11196	11196	PR_FS	0			2024-03-19 16:00	2024-04-08 08:00
+%R	51853071	24417405	24417401	11196	11196	PR_FS	0			2024-02-23 16:00	2024-04-08 08:00
+%R	51853072	24417409	24417372	11196	11196	PR_FF	0			2024-04-08 16:00	2024-04-12 16:00
+%R	51853073	24417410	24417383	11196	11196	PR_FF	0			2024-04-07 16:00	2024-04-12 16:00
+%R	51853074	24417407	24417394	11196	11196	PR_FF	0			2024-04-03 16:00	2024-04-12 16:00
+%R	51853075	24417411	24417405	11196	11196	PR_FF	0			2024-04-12 16:00	2024-04-12 16:00
+%R	51853076	24417373	24417363	11196	11196	PR_SS	0			2023-07-23 08:00	2024-03-09 08:00
+%R	51853077	24417384	24417374	11196	11196	PR_SS	0			2023-10-27 08:00	2024-03-09 08:00
+%R	51853078	24417395	24417385	11196	11196	PR_SS	0			2023-11-20 08:00	2024-03-09 08:00
+%R	51853079	24417406	24417396	11196	11196	PR_SS	0			2023-10-21 08:00	2024-03-09 08:00
+%R	51853080	24417413	24417411	11196	11196	PR_FF	0			2024-04-12 16:00	2024-04-12 16:00
+%R	51853081	24417413	24417407	11196	11196	PR_FF	0			2024-04-03 16:00	2024-04-12 16:00
+%R	51853082	24417362	24417423	11196	11196	PR_SS	0			2023-08-23 08:00	2024-03-09 08:00
+%R	51853083	24417414	24417423	11196	11196	PR_FS	0			2023-09-26 16:00	2023-09-27 08:00
+%R	51853084	24417415	24417423	11196	11196	PR_FS	0			2023-09-26 16:00	2023-10-01 08:00
+%R	51853085	24417416	24417423	11196	11196	PR_FS	0			2023-09-26 16:00	2023-10-06 08:00
+%R	51853086	24417417	24417414	11196	11196	PR_FS	0			2023-10-11 16:00	2023-10-12 08:00
+%R	51853087	24417420	24417415	11196	11196	PR_FS	0			2023-11-09 16:00	2023-11-10 08:00
+%R	51853088	24417421	24417415	11196	11196	PR_FS	0			2023-11-09 16:00	2024-02-24 08:00
+%R	51853089	24417418	24417416	11196	11196	PR_FS	0			2023-10-20 16:00	2024-03-19 08:00
+%R	51853090	24417419	24417417	11196	11196	PR_FS	0			2023-10-16 16:00	2024-02-18 08:00
+%R	51853091	24417420	24417417	11196	11196	PR_FS	0			2023-10-16 16:00	2023-11-10 08:00
+%R	51853092	24417421	24417417	11196	11196	PR_FS	0			2023-10-16 16:00	2024-02-24 08:00
+%R	51853093	24417422	24417418	11196	11196	PR_FS	0			2024-03-28 16:00	2024-04-08 08:00
+%R	51853094	24417422	24417419	11196	11196	PR_FS	0			2024-02-22 16:00	2024-04-08 08:00
+%R	51853095	24417422	24417420	11196	11196	PR_FS	0			2023-11-19 16:00	2024-04-08 08:00
+%R	51853096	24417422	24417421	11196	11196	PR_FS	0			2024-02-28 16:00	2024-04-08 08:00
+%R	51853097	24417408	24417422	11196	11196	PR_FF	0			2024-04-12 16:00	2024-04-12 16:00
+%R	51853098	24417363	24417412	11196	11196	PR_SS	0			2023-07-23 08:00	2023-07-23 08:00
+%R	51853099	24417423	24417412	11196	11196	PR_SS	248			2023-08-22 16:00	2023-07-23 08:00
+%R	51853100	24417374	24417412	11196	11196	PR_SS	720			2023-10-20 16:00	2023-07-29 08:00
+%R	51853101	24417385	24417412	11196	11196	PR_SS	960			2023-11-19 16:00	2023-07-23 08:00
+%R	51853102	24417396	24417412	11196	11196	PR_SS	720			2023-10-20 16:00	2023-07-23 08:00
+%T	TASKRSRC
+%F	taskrsrc_id	task_id	proj_id	cost_qty_link_flag	role_id	acct_id	rsrc_id	pobs_id	skill_level	remain_qty	target_qty	remain_qty_per_hr	target_lag_drtn_hr_cnt	target_qty_per_hr	act_ot_qty	act_reg_qty	relag_drtn_hr_cnt	ot_factor	cost_per_qty	target_cost	act_reg_cost	act_ot_cost	remain_cost	act_start_date	act_end_date	restart_date	reend_date	target_start_date	target_end_date	rem_late_start_date	rem_late_end_date	rollup_dates_flag	target_crv	remain_crv	actual_crv	ts_pend_act_end_flag	guid	rate_type	act_this_per_cost	act_this_per_qty	curv_id	rsrc_type	cost_per_qty_source_type	create_user	create_date	cbs_id	has_rsrchours	taskrsrc_sum_id
+%R	10316952	24417363	11196	Y			77634			280	280	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-07-23 08:00	2023-08-26 16:00	2023-07-23 08:00	2023-08-26 16:00	2023-07-23 08:00	2023-08-26 16:00	Y				N	pBWWYUn2n0m/7uZmOgR3DA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316953	24417364	11196	Y			77632			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-08-27 08:00	2023-09-10 16:00	2023-08-27 08:00	2023-09-10 16:00	2023-08-27 08:00	2023-09-10 16:00	Y				N	NEjtSSZnH0aG9lJWA3zS0w	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316954	24417365	11196	Y			77634			320	320	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-08-27 08:00	2023-10-05 16:00	2023-08-27 08:00	2023-10-05 16:00	2023-08-27 08:00	2023-10-05 16:00	Y				N	tD8Lyh2L70qXbu7/HmRu8w	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316955	24417366	11196	Y			77632			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-09-16 08:00	2023-09-30 16:00	2023-09-16 08:00	2023-09-30 16:00	2023-09-16 08:00	2023-09-30 16:00	Y				N	WR+Aye2GBEGJrEUWRgamQA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316956	24417367	11196	Y			77632			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-09-11 08:00	2023-09-15 16:00	2023-09-11 08:00	2023-09-15 16:00	2023-09-11 08:00	2023-09-15 16:00	Y				N	7QkK/1ynnEaxYDlA/7kKWQ	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316957	24417368	11196	Y			77633			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-10-17 08:00	2023-10-26 16:00	2023-10-17 08:00	2023-10-26 16:00	2023-10-17 08:00	2023-10-26 16:00	Y				N	5jM9wItLLUuvRmuqb+KgMg	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316958	24417369	11196	Y			77634			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-02-28 08:00	2024-03-03 16:00	2024-02-28 08:00	2024-03-03 16:00	2024-02-28 08:00	2024-03-03 16:00	Y				N	1XPu4LnhHkS4WAna//Dugw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316959	24417370	11196	Y			77633			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-20 08:00	2024-03-29 16:00	2024-03-20 08:00	2024-03-29 16:00	2024-03-20 08:00	2024-03-29 16:00	Y				N	Koro7/OsYUm7MDLAhuwBkA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316960	24417371	11196	Y			77634			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	Y				N	l/rwPXOT7ECxrZ1IO1QuMA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316961	24417363	11196	Y			77635			101,818182	101,818182	0,36363636	0	0,36363636	0	0	0		0,9699	98,7577	0,0000	0,0000	98,7577			2023-07-23 08:00	2023-08-26 16:00	2023-07-23 08:00	2023-08-26 16:00	2023-07-23 08:00	2023-08-26 16:00	Y				N	S++2QgEHxESZ5Ih2uzw5/g	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316962	24417364	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2023-08-27 08:00	2023-09-10 16:00	2023-08-27 08:00	2023-09-10 16:00	2023-08-27 08:00	2023-09-10 16:00	Y				N	5CXisDRblUW6mTB4HiIx6w	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316963	24417365	11196	Y			77635			116,363636	116,363636	0,36363636	0	0,36363636	0	0	0		0,9699	112,8660	0,0000	0,0000	112,8660			2023-08-27 08:00	2023-10-05 16:00	2023-08-27 08:00	2023-10-05 16:00	2023-08-27 08:00	2023-10-05 16:00	Y				N	VV6PAypCJEOb++uw9TAorA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316964	24417366	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2023-09-16 08:00	2023-09-30 16:00	2023-09-16 08:00	2023-09-30 16:00	2023-09-16 08:00	2023-09-30 16:00	Y				N	BQprvdewtUufK7fF+MEheg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316965	24417367	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2023-09-11 08:00	2023-09-15 16:00	2023-09-11 08:00	2023-09-15 16:00	2023-09-11 08:00	2023-09-15 16:00	Y				N	hpIgjTvRoEOzE5teFDDZHw	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316966	24417368	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2023-10-17 08:00	2023-10-26 16:00	2023-10-17 08:00	2023-10-26 16:00	2023-10-17 08:00	2023-10-26 16:00	Y				N	ZMBZK3YrjkulowXYsz8OvQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316967	24417369	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-02-28 08:00	2024-03-03 16:00	2024-02-28 08:00	2024-03-03 16:00	2024-02-28 08:00	2024-03-03 16:00	Y				N	6Y48NubcU0STGg0wmxEptA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316968	24417370	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2024-03-20 08:00	2024-03-29 16:00	2024-03-20 08:00	2024-03-29 16:00	2024-03-20 08:00	2024-03-29 16:00	Y				N	LK4oG2NiSk29gRKAmZEQBA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316969	24417371	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	Y				N	YLA0xYXORUG7s3fU3+bn3A	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316970	24417374	11196	Y			77633			280	280	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-10-27 08:00	2023-11-30 16:00	2023-10-27 08:00	2023-11-30 16:00	2023-10-27 08:00	2023-11-30 16:00	Y				N	qXlnCheuM0KCu5TqLKvOXQ	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316971	24417375	11196	Y			77633			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-12-01 08:00	2023-12-15 16:00	2023-12-01 08:00	2023-12-15 16:00	2023-12-01 08:00	2023-12-15 16:00	Y				N	5Fqaha/XW0WVPkp8ZvZKsQ	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316972	24417376	11196	Y			77634			320	320	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-12-10 08:00	2024-01-18 16:00	2023-12-10 08:00	2024-01-18 16:00	2023-12-10 08:00	2024-01-18 16:00	Y				N	IPwtIuzeeUWFU5QNWp9TXw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316973	24417377	11196	Y			77633			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-12-21 08:00	2024-01-04 16:00	2023-12-21 08:00	2024-01-04 16:00	2023-12-21 08:00	2024-01-04 16:00	Y				N	6XoRJ9gTh0iHdxgP/Sz4pw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316974	24417378	11196	Y			77633			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-12-16 08:00	2023-12-20 16:00	2023-12-16 08:00	2023-12-20 16:00	2023-12-16 08:00	2023-12-20 16:00	Y				N	cTpzwPNSi0S6Q+L0zd99OQ	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316975	24417379	11196	Y			77632			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-02-28 08:00	2024-03-08 16:00	2024-02-28 08:00	2024-03-08 16:00	2024-02-28 08:00	2024-03-08 16:00	Y				N	FMWBqiV0/UWEFNvEAgvIfA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316976	24417380	11196	Y			77632			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-02-23 08:00	2024-02-27 16:00	2024-02-23 08:00	2024-02-27 16:00	2024-02-23 08:00	2024-02-27 16:00	Y				N	5iD/1Lb5N0i0ltXCotVKOg	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316977	24417381	11196	Y			77633			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-05 08:00	2024-03-14 16:00	2024-03-05 08:00	2024-03-14 16:00	2024-03-05 08:00	2024-03-14 16:00	Y				N	JkNUtU+vaUuhxG5pUyhdaA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316978	24417382	11196	Y			77634			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-29 08:00	2024-04-02 16:00	2024-03-29 08:00	2024-04-02 16:00	2024-03-29 08:00	2024-04-02 16:00	Y				N	kHAl09Q3pk+QZkHy/Z+7Ug	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316979	24417374	11196	Y			77635			101,818182	101,818182	0,36363636	0	0,36363636	0	0	0		0,9699	98,7577	0,0000	0,0000	98,7577			2023-10-27 08:00	2023-11-30 16:00	2023-10-27 08:00	2023-11-30 16:00	2023-10-27 08:00	2023-11-30 16:00	Y				N	s/KK+pKkeEOa4XVFHhu0nQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316980	24417375	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2023-12-01 08:00	2023-12-15 16:00	2023-12-01 08:00	2023-12-15 16:00	2023-12-01 08:00	2023-12-15 16:00	Y				N	QBQgyKM8cUu00tF0+WW0cw	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316981	24417376	11196	Y			77635			116,363636	116,363636	0,36363636	0	0,36363636	0	0	0		0,9699	112,8660	0,0000	0,0000	112,8660			2023-12-10 08:00	2024-01-18 16:00	2023-12-10 08:00	2024-01-18 16:00	2023-12-10 08:00	2024-01-18 16:00	Y				N	u2uNr9StLEm9pRv93lDRCQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316982	24417377	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2023-12-21 08:00	2024-01-04 16:00	2023-12-21 08:00	2024-01-04 16:00	2023-12-21 08:00	2024-01-04 16:00	Y				N	r1qsWDftDUSqzH573oWpGw	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316983	24417378	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2023-12-16 08:00	2023-12-20 16:00	2023-12-16 08:00	2023-12-20 16:00	2023-12-16 08:00	2023-12-20 16:00	Y				N	FA2/w6vzo0SBGhZmgs/rGA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316984	24417379	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2024-02-28 08:00	2024-03-08 16:00	2024-02-28 08:00	2024-03-08 16:00	2024-02-28 08:00	2024-03-08 16:00	Y				N	QDM2dEhuTkaUp/E81Iubjg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316985	24417380	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-02-23 08:00	2024-02-27 16:00	2024-02-23 08:00	2024-02-27 16:00	2024-02-23 08:00	2024-02-27 16:00	Y				N	6jFk29UDK0yznTE3xw77bg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316986	24417381	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2024-03-05 08:00	2024-03-14 16:00	2024-03-05 08:00	2024-03-14 16:00	2024-03-05 08:00	2024-03-14 16:00	Y				N	xkjHDYQbQkqk23VgNyWP8w	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316987	24417382	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-03-29 08:00	2024-04-02 16:00	2024-03-29 08:00	2024-04-02 16:00	2024-03-29 08:00	2024-04-02 16:00	Y				N	LDFJaqrY5EqxFxCD6q2shQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316988	24417385	11196	Y			77632			280	280	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-11-20 08:00	2023-12-24 16:00	2023-11-20 08:00	2023-12-24 16:00	2023-11-20 08:00	2023-12-24 16:00	Y				N	ZjkXAaAayEqQ8QN1cPtTew	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316989	24417386	11196	Y			77632			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-12-25 08:00	2024-01-08 16:00	2023-12-25 08:00	2024-01-08 16:00	2023-12-25 08:00	2024-01-08 16:00	Y				N	9LMwIvFyj0iwRorCHV912w	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316990	24417387	11196	Y			77634			320	320	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-01-19 08:00	2024-02-27 16:00	2024-01-19 08:00	2024-02-27 16:00	2024-01-19 08:00	2024-02-27 16:00	Y				N	uyHyDUKT4UC6ZETf57d4Og	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316991	24417388	11196	Y			77632			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-01-29 08:00	2024-02-12 16:00	2024-01-29 08:00	2024-02-12 16:00	2024-01-29 08:00	2024-02-12 16:00	Y				N	wSvrZMcARk+xUxZ23enSOg	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316992	24417389	11196	Y			77632			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-01-09 08:00	2024-01-13 16:00	2024-01-09 08:00	2024-01-13 16:00	2024-01-09 08:00	2024-01-13 16:00	Y				N	W2dXSNAVQE23ZzHaQq5b3w	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316993	24417390	11196	Y			77634			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-04 08:00	2024-03-13 16:00	2024-03-04 08:00	2024-03-13 16:00	2024-03-04 08:00	2024-03-13 16:00	Y				N	jKq5Ql7uFkiTyqFfarSVDg	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316994	24417391	11196	Y			77633			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-02-29 08:00	2024-03-04 16:00	2024-02-29 08:00	2024-03-04 16:00	2024-02-29 08:00	2024-03-04 16:00	Y				N	50KmpN+pxkGzD2Q6xi5L/Q	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316995	24417392	11196	Y			77632			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	Y				N	jTV3fxccTkark/vU3UHXPA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316996	24417393	11196	Y			77632			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-09 08:00	2024-03-13 16:00	2024-03-09 08:00	2024-03-13 16:00	2024-03-09 08:00	2024-03-13 16:00	Y				N	7UzesY6AWUe+UffNJbRQKA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316997	24417385	11196	Y			77635			101,818182	101,818182	0,36363636	0	0,36363636	0	0	0		0,9699	98,7577	0,0000	0,0000	98,7577			2023-11-20 08:00	2023-12-24 16:00	2023-11-20 08:00	2023-12-24 16:00	2023-11-20 08:00	2023-12-24 16:00	Y				N	3zoJSMbAq0StYXdXWYJ2HA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316998	24417386	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2023-12-25 08:00	2024-01-08 16:00	2023-12-25 08:00	2024-01-08 16:00	2023-12-25 08:00	2024-01-08 16:00	Y				N	ujTWQ00Huke6uZC25FDpyA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10316999	24417387	11196	Y			77635			116,363636	116,363636	0,36363636	0	0,36363636	0	0	0		0,9699	112,8660	0,0000	0,0000	112,8660			2024-01-19 08:00	2024-02-27 16:00	2024-01-19 08:00	2024-02-27 16:00	2024-01-19 08:00	2024-02-27 16:00	Y				N	JCtoT2sbEkuVp+ibfK5LzQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317000	24417388	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2024-01-29 08:00	2024-02-12 16:00	2024-01-29 08:00	2024-02-12 16:00	2024-01-29 08:00	2024-02-12 16:00	Y				N	QLBUXMN3GEmwrMbA6lt5qw	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317001	24417389	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-01-09 08:00	2024-01-13 16:00	2024-01-09 08:00	2024-01-13 16:00	2024-01-09 08:00	2024-01-13 16:00	Y				N	EcyG0VpCLkWCaz7DmXyexQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317002	24417390	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2024-03-04 08:00	2024-03-13 16:00	2024-03-04 08:00	2024-03-13 16:00	2024-03-04 08:00	2024-03-13 16:00	Y				N	ZlTYNT7WXUib40e4iT4lyw	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317003	24417391	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-02-29 08:00	2024-03-04 16:00	2024-02-29 08:00	2024-03-04 16:00	2024-02-29 08:00	2024-03-04 16:00	Y				N	evjMFLoCdE2zqJsol4/llA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317004	24417392	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	Y				N	o5BDvLnhfUaiwwzxEZOC6A	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317005	24417393	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-03-09 08:00	2024-03-13 16:00	2024-03-09 08:00	2024-03-13 16:00	2024-03-09 08:00	2024-03-13 16:00	Y				N	CEeMA9nc00GrfsCe08P4FQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317006	24417396	11196	Y			77634			280	280	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-10-21 08:00	2023-11-24 16:00	2023-10-21 08:00	2023-11-24 16:00	2023-10-21 08:00	2023-11-24 16:00	Y				N	qyF47uSvXEu1npTf0nehgw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317007	24417397	11196	Y			77634			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-11-25 08:00	2023-12-09 16:00	2023-11-25 08:00	2023-12-09 16:00	2023-11-25 08:00	2023-12-09 16:00	Y				N	cZ//lG5Ko0O2tckCgG9/4A	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317008	24417398	11196	Y			77633			320	320	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-01-05 08:00	2024-02-13 16:00	2024-01-05 08:00	2024-02-13 16:00	2024-01-05 08:00	2024-02-13 16:00	Y				N	bRIHto9Y20O/CoREf1KEOw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317009	24417399	11196	Y			77632			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-01-14 08:00	2024-01-28 16:00	2024-01-14 08:00	2024-01-28 16:00	2024-01-14 08:00	2024-01-28 16:00	Y				N	8kf2udz2HEW4JiAP6Y9xIA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317010	24417400	11196	Y			77632			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-02-13 08:00	2024-02-17 16:00	2024-02-13 08:00	2024-02-17 16:00	2024-02-13 08:00	2024-02-17 16:00	Y				N	Jq10myfTykaOZ63hQDbN+w	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317011	24417401	11196	Y			77633			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-02-14 08:00	2024-02-23 16:00	2024-02-14 08:00	2024-02-23 16:00	2024-02-14 08:00	2024-02-23 16:00	Y				N	eZAKgYFXUkqKJz22huiC9Q	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317012	24417402	11196	Y			77632			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	Y				N	KkCJJit6VEymIlZ5QMBt3A	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317013	24417403	11196	Y			77632			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-29 08:00	2024-04-07 16:00	2024-03-29 08:00	2024-04-07 16:00	2024-03-29 08:00	2024-04-07 16:00	Y				N	G7R2OrTPlkel2eoaom+xqA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317014	24417404	11196	Y			77633			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-15 08:00	2024-03-19 16:00	2024-03-15 08:00	2024-03-19 16:00	2024-03-15 08:00	2024-03-19 16:00	Y				N	T3iZ/olbPkioRWVz2A5CPQ	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317015	24417396	11196	Y			77635			101,818182	101,818182	0,36363636	0	0,36363636	0	0	0		0,9699	98,7577	0,0000	0,0000	98,7577			2023-10-21 08:00	2023-11-24 16:00	2023-10-21 08:00	2023-11-24 16:00	2023-10-21 08:00	2023-11-24 16:00	Y				N	y6UEMVJLrkmPccWGiNNM1A	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317016	24417397	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2023-11-25 08:00	2023-12-09 16:00	2023-11-25 08:00	2023-12-09 16:00	2023-11-25 08:00	2023-12-09 16:00	Y				N	DgfyV71oeEaNFdaGTw024g	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317017	24417398	11196	Y			77635			116,363636	116,363636	0,36363636	0	0,36363636	0	0	0		0,9699	112,8660	0,0000	0,0000	112,8660			2024-01-05 08:00	2024-02-13 16:00	2024-01-05 08:00	2024-02-13 16:00	2024-01-05 08:00	2024-02-13 16:00	Y				N	Nmp/cxYvc0KtHONqZ8R3Hw	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317018	24417399	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2024-01-14 08:00	2024-01-28 16:00	2024-01-14 08:00	2024-01-28 16:00	2024-01-14 08:00	2024-01-28 16:00	Y				N	JGX9HHOI7k+SynqkcJMBRQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317019	24417400	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-02-13 08:00	2024-02-17 16:00	2024-02-13 08:00	2024-02-17 16:00	2024-02-13 08:00	2024-02-17 16:00	Y				N	KbhmMhY0sUua3ALa32x+hQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317020	24417401	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2024-02-14 08:00	2024-02-23 16:00	2024-02-14 08:00	2024-02-23 16:00	2024-02-14 08:00	2024-02-23 16:00	Y				N	ShUakKXs60y2F+JR7xGXGg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317021	24417402	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	2024-03-14 08:00	2024-03-18 16:00	Y				N	fyR58R2InUWvkbzrscxtvg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317022	24417403	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2024-03-29 08:00	2024-04-07 16:00	2024-03-29 08:00	2024-04-07 16:00	2024-03-29 08:00	2024-04-07 16:00	Y				N	Zp6Uu6C/OEKFaZkw77ZWlQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317023	24417404	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-03-15 08:00	2024-03-19 16:00	2024-03-15 08:00	2024-03-19 16:00	2024-03-15 08:00	2024-03-19 16:00	Y				N	g1tW1OJ5gE6zpMP/uV1+RA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317024	24417372	11196	Y			77633			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-04-04 08:00	2024-04-08 16:00	2024-04-04 08:00	2024-04-08 16:00	2024-04-04 08:00	2024-04-08 16:00	Y				N	Ubfm6IeYW0KdO+B/GwgQPQ	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317025	24417372	11196	Y			77635			34,545455	34,545455	0,36363636	0	0,36363636	0	0	0		0,9699	33,5071	0,0000	0,0000	33,5071			2024-04-04 08:00	2024-04-08 16:00	2024-04-04 08:00	2024-04-08 16:00	2024-04-04 08:00	2024-04-08 16:00	Y				N	gnUVRgD6yUOIQSuVsXHZkw	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317026	24417383	11196	Y			77634			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-04-03 08:00	2024-04-07 16:00	2024-04-03 08:00	2024-04-07 16:00	2024-04-03 08:00	2024-04-07 16:00	Y				N	ByGq98D+KE6lMl26ixGd+g	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317027	24417383	11196	Y			77635			34,545455	34,545455	0,36363636	0	0,36363636	0	0	0		0,9699	33,5071	0,0000	0,0000	33,5071			2024-04-03 08:00	2024-04-07 16:00	2024-04-03 08:00	2024-04-07 16:00	2024-04-03 08:00	2024-04-07 16:00	Y				N	OETnRrtYB0KmpzsyF1yZkA	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317028	24417394	11196	Y			77633			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-30 08:00	2024-04-03 16:00	2024-03-30 08:00	2024-04-03 16:00	2024-03-30 08:00	2024-04-03 16:00	Y				N	Hfmp6mt5/02LKQdOLflCmw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317029	24417394	11196	Y			77635			34,545455	34,545455	0,36363636	0	0,36363636	0	0	0		0,9699	33,5071	0,0000	0,0000	33,5071			2024-03-30 08:00	2024-04-03 16:00	2024-03-30 08:00	2024-04-03 16:00	2024-03-30 08:00	2024-04-03 16:00	Y				N	a0AuoYPafEir571f2nwkDg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317030	24417405	11196	Y			77632			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	Y				N	FKHdXn7RnUOyFAUMNfGKiQ	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317031	24417405	11196	Y			77635			34,545455	34,545455	0,36363636	0	0,36363636	0	0	0		0,9699	33,5071	0,0000	0,0000	33,5071			2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	Y				N	C7E06h2nhkGXqaHjtjToxQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317032	24417423	11196	Y			77633			280	280	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-08-23 08:00	2023-09-26 16:00	2023-08-23 08:00	2023-09-26 16:00	2023-08-23 08:00	2023-09-26 16:00	Y				N	6t0vEJth/k6HHI7GGZbcAw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317033	24417414	11196	Y			77633			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-09-27 08:00	2023-10-11 16:00	2023-09-27 08:00	2023-10-11 16:00	2023-09-27 08:00	2023-10-11 16:00	Y				N	J83EU76XjEKdACRQrwQKyw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317034	24417415	11196	Y			77632			320	320	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-10-01 08:00	2023-11-09 16:00	2023-10-01 08:00	2023-11-09 16:00	2023-10-01 08:00	2023-11-09 16:00	Y				N	77xDRvz9Q0yPOZfZLViPLg	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317035	24417416	11196	Y			77634			120	120	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-10-06 08:00	2023-10-20 16:00	2023-10-06 08:00	2023-10-20 16:00	2023-10-06 08:00	2023-10-20 16:00	Y				N	vm+qEPsr8EaN+CIHd51j9g	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317036	24417417	11196	Y			77633			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-10-12 08:00	2023-10-16 16:00	2023-10-12 08:00	2023-10-16 16:00	2023-10-12 08:00	2023-10-16 16:00	Y				N	YojgQ1e6/E6jIjtRfxrDvA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317037	24417418	11196	Y			77634			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	Y				N	4fs9F1tah02LPYMrMHinAA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317038	24417419	11196	Y			77632			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-02-18 08:00	2024-02-22 16:00	2024-02-18 08:00	2024-02-22 16:00	2024-02-18 08:00	2024-02-22 16:00	Y				N	LUCT3ecAnkKcMeKNsMIi+w	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317039	24417420	11196	Y			77632			80	80	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2023-11-10 08:00	2023-11-19 16:00	2023-11-10 08:00	2023-11-19 16:00	2023-11-10 08:00	2023-11-19 16:00	Y				N	pZnWRqV38EClRGb82G8grA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317040	24417421	11196	Y			77633			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-02-24 08:00	2024-02-28 16:00	2024-02-24 08:00	2024-02-28 16:00	2024-02-24 08:00	2024-02-28 16:00	Y				N	DPs4MWJbaUy2/fAEkh9ZNA	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317041	24417422	11196	Y			77634			40	40	1	0	1	0	0	0		0,0000	0,0000	0,0000	0,0000	0,0000			2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	Y				N	qSU4nNicIkC2f1ErRuo3uw	COST_PER_QTY	0,0000	0		RT_Labor	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317042	24417423	11196	Y	1567		77635			101,818182	101,818182	0,36363636	0	0,36363636	0	0	0			0,0000	0,0000	0,0000	0,0000			2023-08-23 08:00	2023-09-26 16:00	2023-08-23 08:00	2023-09-26 16:00	2023-08-23 08:00	2023-09-26 16:00	Y				N	Cv6aFyapp028HsY9cgdD3Q	COST_PER_QTY	0,0000	0		RT_Equip	ST_Role	NigmatullinIZ	2025-07-23 09:09			
+%R	10317043	24417414	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2023-09-27 08:00	2023-10-11 16:00	2023-09-27 08:00	2023-10-11 16:00	2023-09-27 08:00	2023-10-11 16:00	Y				N	w/UbY2qSHE2+lCc8PC5SNQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317044	24417415	11196	Y			77635			116,363636	116,363636	0,36363636	0	0,36363636	0	0	0		0,9699	112,8660	0,0000	0,0000	112,8660			2023-10-01 08:00	2023-11-09 16:00	2023-10-01 08:00	2023-11-09 16:00	2023-10-01 08:00	2023-11-09 16:00	Y				N	S2ARM8UuVEOWJ3bsXaohNg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317045	24417416	11196	Y			77635			43,636364	43,636364	0,36363636	0	0,36363636	0	0	0		0,9699	42,3247	0,0000	0,0000	42,3247			2023-10-06 08:00	2023-10-20 16:00	2023-10-06 08:00	2023-10-20 16:00	2023-10-06 08:00	2023-10-20 16:00	Y				N	8NH7RPGuSE+IKTq8UinbYg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317046	24417417	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2023-10-12 08:00	2023-10-16 16:00	2023-10-12 08:00	2023-10-16 16:00	2023-10-12 08:00	2023-10-16 16:00	Y				N	PF5NrHliXES1zFSnzzYXJg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317047	24417418	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	2024-03-19 08:00	2024-03-28 16:00	Y				N	Y23vCvJSDkiVhaBHJrESWg	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317048	24417419	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-02-18 08:00	2024-02-22 16:00	2024-02-18 08:00	2024-02-22 16:00	2024-02-18 08:00	2024-02-22 16:00	Y				N	sRdM5NdA1UmozYClS0hH0g	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317049	24417420	11196	Y			77635			29,090909	29,090909	0,36363636	0	0,36363636	0	0	0		0,9699	28,2165	0,0000	0,0000	28,2165			2023-11-10 08:00	2023-11-19 16:00	2023-11-10 08:00	2023-11-19 16:00	2023-11-10 08:00	2023-11-19 16:00	Y				N	zD3iRmQT0kq/ZOmBWMIgWQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317050	24417421	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-02-24 08:00	2024-02-28 16:00	2024-02-24 08:00	2024-02-28 16:00	2024-02-24 08:00	2024-02-28 16:00	Y				N	YEwI0arplE6ofGddZWBKhQ	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%R	10317051	24417422	11196	Y			77635			14,545455	14,545455	0,36363636	0	0,36363636	0	0	0		0,9699	14,1082	0,0000	0,0000	14,1082			2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	2024-04-08 08:00	2024-04-12 16:00	Y				N	fgBjDTSpeUGOfdnsfhZ4Ig	COST_PER_QTY	0,0000	0		RT_Equip	ST_Rsrc	NigmatullinIZ	2025-07-23 09:09			
+%T	UDFVALUE
+%F	udf_type_id	fk_id	proj_id	udf_date	udf_number	udf_text	udf_code_id
+%R	85386	24417363	11196			Worker 1	
+%R	85386	24417364	11196			Worker 3	
+%R	85386	24417365	11196			Worker 1	
+%R	85386	24417366	11196			Worker 3	
+%R	85386	24417367	11196			Worker 3	
+%R	85386	24417368	11196			Worker 2	
+%R	85386	24417369	11196			Worker 1	
+%R	85386	24417370	11196			Worker 2	
+%R	85386	24417371	11196			Worker 1	
+%R	85386	24417372	11196			Worker 2	
+%R	85386	24417374	11196			Worker 2	
+%R	85386	24417375	11196			Worker 2	
+%R	85386	24417376	11196			Worker 1	
+%R	85386	24417377	11196			Worker 2	
+%R	85386	24417378	11196			Worker 2	
+%R	85386	24417379	11196			Worker 3	
+%R	85386	24417380	11196			Worker 3	
+%R	85386	24417381	11196			Worker 2	
+%R	85386	24417382	11196			Worker 1	
+%R	85386	24417383	11196			Worker 1	
+%R	85386	24417385	11196			Worker 3	
+%R	85386	24417386	11196			Worker 3	
+%R	85386	24417387	11196			Worker 1	
+%R	85386	24417388	11196			Worker 3	
+%R	85386	24417389	11196			Worker 3	
+%R	85386	24417390	11196			Worker 1	
+%R	85386	24417391	11196			Worker 2	
+%R	85386	24417392	11196			Worker 3	
+%R	85386	24417393	11196			Worker 3	
+%R	85386	24417394	11196			Worker 2	
+%R	85386	24417396	11196			Worker 1	
+%R	85386	24417397	11196			Worker 1	
+%R	85386	24417398	11196			Worker 2	
+%R	85386	24417399	11196			Worker 3	
+%R	85386	24417400	11196			Worker 3	
+%R	85386	24417401	11196			Worker 2	
+%R	85386	24417402	11196			Worker 3	
+%R	85386	24417403	11196			Worker 3	
+%R	85386	24417404	11196			Worker 2	
+%R	85386	24417405	11196			Worker 3	
+%R	85386	24417414	11196			Worker 2	
+%R	85386	24417415	11196			Worker 3	
+%R	85386	24417416	11196			Worker 1	
+%R	85386	24417417	11196			Worker 2	
+%R	85386	24417418	11196			Worker 1	
+%R	85386	24417419	11196			Worker 3	
+%R	85386	24417420	11196			Worker 3	
+%R	85386	24417421	11196			Worker 2	
+%R	85386	24417422	11196			Worker 1	
+%R	85386	24417423	11196			Worker 2	
+%E
