@@ -310,11 +310,16 @@ def run_scenario_type_1(tasks_df, rels_df, mile_mask, nb_workers,
     return status, None, None
 
 
-def run_scenario_type_2(tasks_df, rels_df, xer, project,
+def run_scenario_type_2(tasks_df, rels_df, xer=None, project=None,
                         udf_label=DEFAULTUDFLABEL, subcrew_config=None,
-                        project_start=None, data_date=None):
+                        project_start=None, data_date=None,
+                        task_res_map=None):
     """
-    Scenario 2: Assignment based on XER UDF and sub-crew capacity.
+    Scenario 2: Assignment based on resource mapping and sub-crew capacity.
+
+    For XER files, the resource mapping is derived from a P6 UDF field.
+    For MPP files, pass task_res_map directly (uid -> resource_name) to
+    bypass the UDF lookup.
 
     Completed / in-progress tasks are pinned to actual dates and excluded
     from sub-crew assignment; only not-started tasks are optimized.
@@ -322,17 +327,19 @@ def run_scenario_type_2(tasks_df, rels_df, xer, project,
     if subcrew_config is None:
         subcrew_config = {}
 
-    # Extract resource mapping from XER UDF
-    res_udf = next(
-        (el for el in xer.udf_types.values() if el.label == udf_label), None
-    )
-    if not res_udf:
-        return "UDF_NOT_FOUND", None, None
+    if task_res_map is None:
+        # XER / P6 path: extract resource mapping from UDF
+        res_udf = next(
+            (el for el in xer.udf_types.values() if el.label == udf_label),
+            None,
+        )
+        if not res_udf:
+            return "UDF_NOT_FOUND", None, None
 
-    task_res_map = {
-        t.uid: t.user_defined_fields[res_udf]
-        for t in project.tasks if res_udf in t.user_defined_fields
-    }
+        task_res_map = {
+            t.uid: t.user_defined_fields[res_udf]
+            for t in project.tasks if res_udf in t.user_defined_fields
+        }
 
     model, task_vars, horizon = solve_model_common_setup(
         tasks_df, rels_df, project_start, data_date
