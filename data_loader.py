@@ -132,6 +132,23 @@ def load_and_prepare_mpp(uploaded_file):
     """
     # mpxj import is deferred so XER workflow works without a JVM installed.
     # startJVM() must be called explicitly before using org.mpxj Java classes.
+
+    # On headless servers (e.g. Streamlit Cloud) JAVA_HOME is often not set
+    # even when a JDK is present.  Derive it from `which java` so JPype can
+    # locate libjvm.so before we import mpxj.
+    if 'JAVA_HOME' not in os.environ:
+        try:
+            import subprocess  # noqa: PLC0415, I001
+            _java = subprocess.check_output(
+                ['which', 'java'], stderr=subprocess.DEVNULL,
+            ).decode().strip()
+            if _java:
+                os.environ['JAVA_HOME'] = os.path.dirname(
+                    os.path.dirname(os.path.realpath(_java))
+                )
+        except Exception:
+            pass
+
     try:
         import mpxj as _mpxj  # noqa: PLC0415, I001
         if not _mpxj.isJVMStarted():
